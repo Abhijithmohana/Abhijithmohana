@@ -2,7 +2,8 @@
 
  **End-User Computing (EUC) Specialist** | 💻 Intune • Nexthink • JAMF • M365  
  Currently working at **TCS** | Ex-**ICON PLC**, **MariApps**  
-📍 Based in Kochi, India
+
+Based in Kochi, India
 
 ---
 
