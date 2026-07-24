@@ -1,9 +1,8 @@
-#Hi, I’m Abhijith Mohana
+#Hi, I’m Abhijith Mohanan
 
  **End-User Computing (EUC) Specialist** | 💻 Intune • Nexthink • JAMF • M365  
- Currently working at **TCS** | Ex-**ICON PLC**, **MariApps**  
-
-Based in Kochi, India
+ Currently working at **TCS** | Ex-**ICON PLC**,
+Based in Trivandrum, India
 
 ---
 
@@ -40,10 +39,6 @@ Based in Kochi, India
 
 ## How to reach me:
 - [LinkedIn](https://www.linkedin.com/in/abhijithmohana)  
-- abhijithmohana@example.com (replace with real one)  
-- Portfolio coming soon...
-
----
 
 ##  Pronoun: He/Him  
 ##. Fun fact:
