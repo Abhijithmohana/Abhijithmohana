@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abhijith M — Principal Infrastructure Engineer, Endpoint & EUC Engineering">
+  <title>Abhijith M | Infrastructure Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="avatar-mini">AM</div>
+        <div><strong>Abhijith M</strong><span>Infrastructure Dashboard</span></div>
+      </div>
+
+      <nav>
+        <a class="nav-item active" href="#dashboard">▦ <span>Dashboard</span></a>
+        <a class="nav-item" href="#overview">◉ <span>Overview</span></a>
+        <div class="nav-label">PROFESSIONAL</div>
+        <a class="nav-item" href="#about">◎ <span>About Me</span></a>
+        <a class="nav-item" href="#experience">▣ <span>Experience</span></a>
+        <a class="nav-item" href="#projects">▱ <span>Projects</span></a>
+        <a class="nav-item" href="#achievements">★ <span>Achievements</span></a>
+        <a class="nav-item" href="#certifications">♢ <span>Certifications</span></a>
+        <div class="nav-label">TECHNICAL</div>
+        <a class="nav-item" href="#skills">⚙ <span>Skills & Expertise</span></a>
+        <a class="nav-item" href="#tools">▤ <span>Tools & Technologies</span></a>
+        <a class="nav-item" href="#automation">⌘ <span>Automation</span></a>
+        <a class="nav-item" href="#insights">▤ <span>Insights</span></a>
+        <div class="nav-label">CONNECT</div>
+        <a class="nav-item" href="#contact">✉ <span>Contact</span></a>
+        <a class="nav-item" href="#" onclick="downloadResume(event)">⇩ <span>Resume</span></a>
+        <a class="nav-item" href="https://www.linkedin.com/in/abhijithmohanan/" target="_blank">in <span>LinkedIn ↗</span></a>
+        <a class="nav-item" href="https://github.com/" target="_blank">◉ <span>GitHub ↗</span></a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <button class="resume-btn" onclick="downloadResume(event)">⇩ &nbsp; Download Resume</button>
+        <div class="theme-row"><span>☾ &nbsp; Dark Mode</span><button class="switch on" aria-label="Toggle theme" onclick="toggleTheme()"><i></i></button></div>
+        <small>© 2026 Abhijith M</small>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <button class="menu" onclick="toggleSidebar()">☰</button>
+        <div class="crumb"><strong>Dashboard</strong><span>Home　›　Overview</span></div>
+        <div class="top-actions">
+          <div class="search">⌕ <input id="search" placeholder="Search (Ctrl + K)" oninput="filterPage()"></div>
+          <span class="icon">◔</span><span class="icon">♧</span>
+          <div class="status"><i></i> All Systems Operational</div>
+        </div>
+      </header>
+
+      <section id="dashboard" class="hero panel">
+        <div>
+          <h1>Welcome, I'm Abhijith M 👋</h1>
+          <h2>Principal Infrastructure Engineer – Endpoint & EUC Engineering</h2>
+          <p>I design, implement and automate modern endpoint management solutions using Microsoft Intune, PowerShell, Microsoft Graph API and cloud technologies to deliver secure, scalable and efficient IT environments.</p>
+          <div class="buttons">
+            <button class="primary" onclick="downloadResume(event)">⇩ &nbsp; Download Resume</button>
+            <a class="secondary" href="#contact">✉ &nbsp; Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-graphic">
+          <div class="intune-window">
+            <div class="window-title">☁ Microsoft Intune <span>×</span></div>
+            <div class="device-icons"><b>▣</b><b>●</b><b>▤</b><b>▰</b></div>
+            <div class="fake-chart"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="shield">✓</div>
+          </div>
+          <div class="float one">▣</div><div class="float two">⚙</div><div class="float three">⌁</div>
+        </div>
+      </section>
+
+      <section id="overview" class="panel">
+        <div class="section-head"><h3>ENDPOINT OVERVIEW</h3><span>Professional profile metrics</span></div>
+        <div class="metrics">
+          <div class="metric"><div class="metric-icon blue">▣</div><div><strong>Endpoint</strong><span>Management</span></div></div>
+          <div class="metric"><div class="metric-icon green">⌁</div><div><strong>Automation</strong><span>PowerShell & Graph</span></div></div>
+          <div class="metric"><div class="metric-icon purple">▱</div><div><strong>Application</strong><span>Packaging & Deployment</span></div></div>
+          <div class="metric"><div class="metric-icon cyan">✓</div><div><strong>Security</strong><span>Compliance & Baselines</span></div></div>
+        </div>
+      </section>
+
+      <div class="two-col">
+        <section id="about" class="panel">
+          <div class="section-head"><h3>ABOUT ME</h3></div>
+          <p class="body-copy">I work across enterprise endpoint and End User Computing environments, with a focus on modern management, device lifecycle engineering, application deployment and automation.</p>
+          <p class="body-copy">My technical focus includes Windows, macOS, iOS and Android management, Microsoft Intune, PowerShell, Microsoft Graph API and enterprise automation.</p>
+        </section>
+        <section id="experience" class="panel">
+          <div class="section-head"><h3>EXPERIENCE</h3></div>
+          <div class="timeline">
+            <div><b>Principal Infrastructure Engineer</b><span>Mphasis · Aug 2026 – Present</span><p>Endpoint & EUC engineering, device lifecycle management and enterprise endpoint solutions.</p></div>
+            <div><b>Infrastructure / Endpoint Engineering</b><span>TCS</span><p>Enterprise endpoint management, engineering and automation.</p></div>
+          </div>
+        </section>
+      </div>
+
+      <section id="skills" class="panel">
+        <div class="section-head"><h3>CORE EXPERTISE</h3><span>Endpoint & EUC technology stack</span></div>
+        <div class="expertise">
+          <div class="expert"><b>▣</b><strong>Microsoft Intune</strong><span>Endpoint management, configuration & compliance</span></div>
+          <div class="expert"><b>▣</b><strong>Windows 10/11</strong><span>Deployment, imaging & update management</span></div>
+          <div class="expert"><b>●</b><strong>macOS</strong><span>Deployment, profiles & management</span></div>
+          <div class="expert"><b>▰</b><strong>iOS / Android</strong><span>Mobile device management</span></div>
+          <div class="expert"><b>›_</b><strong>PowerShell Automation</strong><span>Automation, scripting & remediation</span></div>
+          <div class="expert"><b>⌘</b><strong>Microsoft Graph API</strong><span>API integration & automation</span></div>
+          <div class="expert"><b>◈</b><strong>Autopilot & OSD</strong><span>Zero-touch Windows deployment</span></div>
+          <div class="expert"><b>♢</b><strong>Endpoint Security</strong><span>Defender, BitLocker & baselines</span></div>
+          <div class="expert"><b>✓</b><strong>Compliance & Policy</strong><span>Settings catalog & compliance</span></div>
+          <div class="expert"><b>▤</b><strong>Application Packaging</strong><span>Win32 apps & deployment</span></div>
+          <div class="expert"><b>⌁</b><strong>Reporting & Analytics</strong><span>Endpoint reporting & insights</span></div>
+          <div class="expert"><b>△</b><strong>Entra ID</strong><span>Identity & conditional access</span></div>
+        </div>
+      </section>
+
+      <div class="two-col">
+        <section id="projects" class="panel">
+          <div class="section-head"><h3>FEATURED PROJECTS</h3><a href="#projects">View All Projects →</a></div>
+          <article class="project"><b>▣</b><div><strong>Dynamic Corporate Wallpaper Solution</strong><p>PowerShell automation and Win32 deployment for dynamic user-based corporate branding.</p></div><em>Intune</em><em>PowerShell</em></article>
+          <article class="project"><b>▣</b><div><strong>Intune Win32 App Automation</strong><p>Reusable packaging, deployment and detection/remediation workflows.</p></div><em>Intune</em><em>PowerShell</em></article>
+          <article class="project"><b>☁</b><div><strong>Endpoint Engineering</strong><p>Enterprise endpoint lifecycle, configuration and modern management solutions.</p></div><em>EUC</em><em>Windows</em></article>
+        </section>
+
+        <section id="achievements" class="panel">
+          <div class="section-head"><h3>RECENT HIGHLIGHTS</h3></div>
+          <ul class="highlights">
+            <li>Enterprise endpoint engineering and lifecycle management</li>
+            <li>PowerShell-based automation and remediation</li>
+            <li>Win32 application packaging and deployment</li>
+            <li>Corporate endpoint branding automation</li>
+            <li>Modern management across Windows and mobile platforms</li>
+          </ul>
+        </section>
+      </div>
+
+      <section id="tools" class="panel">
+        <div class="section-head"><h3>TOOLS & TECHNOLOGIES</h3></div>
+        <div class="chips">
+          <span>Microsoft Intune</span><span>PowerShell</span><span>Microsoft Graph API</span><span>Windows 10/11</span><span>Windows Autopilot</span><span>Microsoft Entra ID</span><span>Win32 Packaging</span><span>Endpoint Security</span><span>macOS</span><span>iOS</span><span>Android</span><span>Azure</span>
+        </div>
+      </section>
+
+      <div class="two-col">
+        <section id="certifications" class="panel">
+          <div class="section-head"><h3>CERTIFICATIONS</h3></div>
+          <p class="muted">Add your verified Microsoft certifications here. This section intentionally avoids inventing certification claims.</p>
+          <div class="cert-placeholder">＋ Add certification</div>
+        </section>
+        <section id="automation" class="panel">
+          <div class="section-head"><h3>AUTOMATION</h3></div>
+          <div class="code-card"><span>PS&gt;</span> Get-EndpointAutomation<br><b>PowerShell</b> · <b>Intune</b> · <b>Graph API</b><br><span class="green">Status: Ready to automate</span></div>
+        </section>
+      </div>
+
+      <section id="contact" class="panel contact">
+        <div><div class="section-head"><h3>QUICK CONTACT</h3></div><h2>Let's connect.</h2><p>For professional opportunities and Endpoint / EUC engineering discussions.</p></div>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/abhijithmohanan/" target="_blank">in &nbsp; LinkedIn Profile ↗</a>
+          <a href="mailto:YOUR-EMAIL@example.com">✉ &nbsp; YOUR-EMAIL@example.com</a>
+          <a href="https://github.com/" target="_blank">◉ &nbsp; GitHub Profile ↗</a>
+        </div>
+      </section>
+
+      <footer>© 2026 Abhijith M · Infrastructure & Endpoint Engineering · Hosted on GitHub Pages</footer>
+    </main>
+  </div>
+
+<script>
+function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open')}
+function toggleTheme(){document.body.classList.toggle('light')}
+function downloadResume(e){e.preventDefault(); alert('Add your resume PDF as "resume.pdf" to this repository, then this button can be linked to it.');}
+function filterPage(){
+  const q=document.getElementById('search').value.toLowerCase().trim();
+  document.querySelectorAll('.panel,.expert,.project,.skill').forEach(el=>{
+    if(!q){el.classList.remove('dim');return}
+    el.classList.toggle('dim', !el.innerText.toLowerCase().includes(q));
+  });
+}
+document.addEventListener('keydown',e=>{
+  if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();document.getElementById('search').focus()}
+});
+</script>
+</body>
+</html>
