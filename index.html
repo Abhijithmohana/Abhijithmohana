@@ -62,72 +62,77 @@
 
     <!-- ============ SIDEBAR ============ -->
     <aside class="sidebar" id="sidebar">
+      <!-- Jamf Pro Console Top Branding -->
+      <div class="sidebar-brand-header">
+        <div class="sidebar-brand-badge">
+          <svg viewBox="0 0 24 24" class="sidebar-brand-icon"><rect x="3" y="3" width="7" height="7" rx="1.5" fill="currentColor"/><rect x="14" y="3" width="7" height="7" rx="1.5" fill="currentColor"/><rect x="3" y="14" width="7" height="7" rx="1.5" fill="currentColor"/><rect x="14" y="14" width="7" height="7" rx="1.5" fill="currentColor"/></svg>
+        </div>
+        <div class="sidebar-brand-info">
+          <span class="sidebar-brand-title">Abhijith Mohanan</span>
+          <span class="sidebar-brand-subtitle">Infrastructure Dashboard</span>
+        </div>
+      </div>
+
       <nav class="sidebar-nav">
-        <ul class="nav-list">
-          <li><a href="#dashboard" class="nav-link active" data-target="dashboard">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M3 9.5 12 3l9 6.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10v10h14V10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Dashboard</a></li>
-          <li><a href="#what-i-build" class="nav-link" data-target="what-i-build">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M2 20h20M5 20V8l7-5 7 5v12M9 20v-6h6v6" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
-            What I Build</a></li>
-          <li><a href="#lifecycle" class="nav-link" data-target="lifecycle">
-            <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
-            Lifecycle</a></li>
-          <li><a href="#overview" class="nav-link" data-target="overview">
-            <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8L7 17M17 7l2.8-2.8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
-            Overview</a></li>
-        </ul>
+        <!-- SECTION: WORKSPACE -->
+        <div class="nav-section">
+          <span class="nav-section-label">WORKSPACE</span>
+          <ul class="nav-list">
+            <li><a href="#dashboard" class="nav-link active" data-target="dashboard">
+              <svg viewBox="0 0 24 24" class="icon"><path d="M3 9.5 12 3l9 6.5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10v10h14V10" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>Dashboard</span></a></li>
+            <li><a href="#what-i-build" class="nav-link" data-target="what-i-build">
+              <svg viewBox="0 0 24 24" class="icon"><path d="M2 20h20M5 20V8l7-5 7 5v12M9 20v-6h6v6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
+              <span>What I Build</span></a></li>
+            <li><a href="#lifecycle" class="nav-link" data-target="lifecycle">
+              <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+              <span>Lifecycle</span></a></li>
+            <li><a href="#overview" class="nav-link" data-target="overview">
+              <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8L7 17M17 7l2.8-2.8" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+              <span>Overview</span></a></li>
+          </ul>
+        </div>
 
-        <span class="nav-section-label">Professional</span>
-        <ul class="nav-list">
-          <li><a href="#about" class="nav-link" data-target="about">
-            <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
-            About Me</a></li>
-          <li><a href="#experience" class="nav-link" data-target="experience">
-            <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="7" width="18" height="13" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="2" fill="none"/></svg>
-            Experience</a></li>
-          <li><a href="#projects" class="nav-link" data-target="projects">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
-            Projects</a></li>
-          <li><a href="#skills" class="nav-link" data-target="skills">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M12 2 2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
-            Skills</a></li>
-          <li><a href="#certifications" class="nav-link" data-target="certifications">
-            <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="8" r="5" stroke="currentColor" stroke-width="2" fill="none"/><path d="M8.5 13 7 22l5-3 5 3-1.5-9" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
-            Certifications</a></li>
-          <li><a href="#achievements" class="nav-link" data-target="achievements">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M12 2l3 7 7 .5-5.5 4.5 2 7-6.5-4-6.5 4 2-7L2 9.5 9 9z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
-            Achievements</a></li>
-        </ul>
+        <!-- SECTION: PROFESSIONAL -->
+        <div class="nav-section">
+          <span class="nav-section-label">PROFESSIONAL</span>
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-link" data-target="about">
+              <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+              <span>About Me</span></a></li>
+            <li><a href="#experience" class="nav-link" data-target="experience">
+              <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="7" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>
+              <span>Experience</span></a></li>
+            <li><a href="#projects" class="nav-link" data-target="projects">
+              <svg viewBox="0 0 24 24" class="icon"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
+              <span>Projects</span></a></li>
+            <li><a href="#skills" class="nav-link" data-target="skills">
+              <svg viewBox="0 0 24 24" class="icon"><path d="M12 2 2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
+              <span>Skills</span></a></li>
+            <li><a href="#certifications" class="nav-link" data-target="certifications">
+              <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="8" r="5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M8.5 13 7 22l5-3 5 3-1.5-9" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
+              <span>Certifications</span></a></li>
+            <li><a href="#achievements" class="nav-link" data-target="achievements">
+              <svg viewBox="0 0 24 24" class="icon"><path d="M12 2l3 7 7 .5-5.5 4.5 2 7-6.5-4-6.5 4 2-7L2 9.5 9 9z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
+              <span>Achievements</span></a></li>
+          </ul>
+        </div>
 
-        <span class="nav-section-label">Technical</span>
-        <ul class="nav-list">
-          <li><a href="#tools" class="nav-link" data-target="tools">
-            <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linejoin="round"/></svg>
-            Tools &amp; Technologies</a></li>
-          <li><a href="#automation" class="nav-link" data-target="automation">
-            <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M7 9l3 3-3 3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 15h5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
-            Automation Scripts</a></li>
-          <li><a href="#blog" class="nav-link" data-target="blog">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M4 4h16v13H8l-4 4V4z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
-            Blog / Insights</a></li>
-        </ul>
-
-        <span class="nav-section-label">Connect</span>
-        <ul class="nav-list">
-          <li><a href="#contact" class="nav-link" data-target="contact">
-            <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Contact</a></li>
-          <li><a href="resume.pdf" download class="nav-link">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><path d="M14 2v6h6" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
-            Resume</a></li>
-          <li><a href="https://www.linkedin.com/in/abhijithmohanan/" target="_blank" rel="noopener" class="nav-link">
-            <svg viewBox="0 0 24 24" class="icon"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M7 10v7M7 7v.01M12 17v-4.5a2 2 0 1 1 4 0V17M12 12.5V17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
-            LinkedIn Profile</a></li>
-          <li><a href="https://github.com/Abhijithmohana" target="_blank" rel="noopener" class="nav-link" id="githubNavLink">
-            <svg viewBox="0 0 24 24" class="icon"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2z" fill="currentColor"/></svg>
-            GitHub Profile</a></li>
-        </ul>
+        <!-- SECTION: ENGINEERING -->
+        <div class="nav-section">
+          <span class="nav-section-label">ENGINEERING</span>
+          <ul class="nav-list">
+            <li><a href="#tools" class="nav-link" data-target="tools">
+              <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
+              <span>Tools &amp; Technologies</span></a></li>
+            <li><a href="#automation" class="nav-link" data-target="automation">
+              <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M7 9l3 3-3 3" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 15h5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+              <span>Automation Scripts</span></a></li>
+            <li><a href="#blog" class="nav-link" data-target="blog">
+              <svg viewBox="0 0 24 24" class="icon"><path d="M4 4h16v13H8l-4 4V4z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
+              <span>Blog / Insights</span></a></li>
+          </ul>
+        </div>
       </nav>
 
       <div class="sidebar-footer">
@@ -138,7 +143,7 @@
             <span class="slider"></span>
           </label>
         </div>
-        <p class="sidebar-copy">© 2026 Abhijith Mohanan<br />All rights reserved.</p>
+        <p class="sidebar-copy">© 2026 Abhijith Mohanan</p>
       </div>
     </aside>
 
