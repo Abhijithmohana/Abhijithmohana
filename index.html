@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Abhijith M | Infrastructure Dashboard</title>
-<meta name="description" content="Abhijith M — Principal Infrastructure Engineer, Endpoint & EUC Engineering. Microsoft Intune, PowerShell, Graph API, Autopilot." />
+<title>Abhijith Mohanan | Infrastructure Dashboard</title>
+<meta name="description" content="Abhijith Mohanan — Principal Infrastructure Engineer | EUC Engineer, Intune, Jamf and MDM. India · Remote / Hybrid | Bangalore." />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body class="dark">
@@ -16,31 +16,41 @@
         <svg viewBox="0 0 24 24" class="icon"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
       </button>
       <div class="brand-badge">
-        <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="7" height="7" rx="1" fill="currentColor"/><rect x="14" y="3" width="7" height="7" rx="1" fill="currentColor"/><rect x="3" y="14" width="7" height="7" rx="1" fill="currentColor"/><rect x="14" y="14" width="7" height="7" rx="1" fill="currentColor"/></svg>
+        <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="7" height="7" rx="1.5" fill="currentColor"/><rect x="14" y="3" width="7" height="7" rx="1.5" fill="currentColor"/><rect x="3" y="14" width="7" height="7" rx="1.5" fill="currentColor"/><rect x="14" y="14" width="7" height="7" rx="1.5" fill="currentColor"/></svg>
       </div>
       <div class="brand-text">
-        <span class="brand-name">Abhijith M</span>
+        <span class="brand-name">Abhijith Mohanan</span>
         <span class="brand-sub">Infrastructure Dashboard</span>
       </div>
     </div>
 
+    <!-- TOP NAVIGATION LINKS -->
+    <nav class="top-nav-menu" id="topNavMenu" aria-label="Top Navigation">
+      <ul class="top-nav-list">
+        <li><a href="#dashboard" class="top-nav-link nav-link active" data-target="dashboard">Dashboard</a></li>
+        <li><a href="#what-i-build" class="top-nav-link nav-link" data-target="what-i-build">What I Build</a></li>
+        <li><a href="#projects" class="top-nav-link nav-link" data-target="projects">Projects</a></li>
+        <li><a href="#solutions" class="top-nav-link nav-link" data-target="solutions">Solutions</a></li>
+        <li><a href="#resources" class="top-nav-link nav-link" data-target="resources">Resources</a></li>
+        <li><a href="#contact" class="top-nav-link nav-link" data-target="contact">Contact</a></li>
+        <li><a href="#submit-requirement" class="top-nav-link nav-link top-nav-cta" data-target="submit-requirement">Submit Requirement</a></li>
+      </ul>
+    </nav>
+
     <div class="topbar-main">
       <div class="search-wrap">
         <svg viewBox="0 0 24 24" class="icon search-icon"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
-        <input type="text" id="searchInput" placeholder="Search (Ctrl + K)" autocomplete="off" />
+        <input type="text" id="searchInput" placeholder="Search dashboard (Ctrl + K)" autocomplete="off" />
         <div id="searchResults" class="search-results"></div>
       </div>
 
       <div class="topbar-actions">
-        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
-          <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        </button>
-        <button class="icon-btn" aria-label="Notifications">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.7 21a2 2 0 0 1-3.4 0" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle Dark / Light mode">
+          <svg viewBox="0 0 24 24" class="icon theme-icon"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </button>
         <div class="status-pill">
           <span class="status-dot"></span>
-          <span class="status-text">All Systems Operational</span>
+          <span class="status-text">Fleet Status: Operational</span>
         </div>
       </div>
     </div>
@@ -57,6 +67,12 @@
           <li><a href="#dashboard" class="nav-link active" data-target="dashboard">
             <svg viewBox="0 0 24 24" class="icon"><path d="M3 9.5 12 3l9 6.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10v10h14V10" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
             Dashboard</a></li>
+          <li><a href="#what-i-build" class="nav-link" data-target="what-i-build">
+            <svg viewBox="0 0 24 24" class="icon"><path d="M2 20h20M5 20V8l7-5 7 5v12M9 20v-6h6v6" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
+            What I Build</a></li>
+          <li><a href="#lifecycle" class="nav-link" data-target="lifecycle">
+            <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+            Lifecycle</a></li>
           <li><a href="#overview" class="nav-link" data-target="overview">
             <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8L7 17M17 7l2.8-2.8" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
             Overview</a></li>
@@ -88,7 +104,7 @@
         <ul class="nav-list">
           <li><a href="#tools" class="nav-link" data-target="tools">
             <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linejoin="round"/></svg>
-            Tools & Technologies</a></li>
+            Tools &amp; Technologies</a></li>
           <li><a href="#automation" class="nav-link" data-target="automation">
             <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M7 9l3 3-3 3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 15h5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
             Automation Scripts</a></li>
@@ -122,75 +138,759 @@
             <span class="slider"></span>
           </label>
         </div>
-        <p class="sidebar-copy">© 2026 Abhijith M.<br />All rights reserved.</p>
+        <p class="sidebar-copy">© 2026 Abhijith Mohanan<br />All rights reserved.</p>
       </div>
     </aside>
 
     <!-- ============ MAIN WRAPPER ============ -->
     <div class="main-wrapper">
-      <div class="dashboard-content">
+      <div class="dashboard-content-compact">
 
-        <!-- ================= MAIN COLUMN ================= -->
-        <div class="main-column">
+        <!-- ================= TOP ROW: HERO & PROFILE OVERVIEW ================= -->
+        <section id="dashboard" class="two-col-grid top-hero-grid">
+          <!-- INTRO / HERO CARD (LEFT) -->
+          <div class="card intro-card">
+            <div class="hero-badge-row">
+              <span class="hero-pill-badge">Principal Infrastructure Engineer</span>
+              <span class="hero-pill-sub">EUC Engineer • Endpoint Management • Intune • Jamf • MDM • Autopilot</span>
+            </div>
+            <h1 class="hero-heading">Hi, I'm Abhijith Mohanan <span class="wave">👋</span></h1>
+            <p class="hero-desc">Principal Infrastructure Engineer specializing in building, modernizing, and managing enterprise Endpoint &amp; EUC environments across Windows, macOS, iOS, and Android. Experienced in Intune tenant architecture, Autopilot, Jamf Pro, MDM, PowerShell automation, endpoint security, and client enablement.</p>
+            
+            <div class="hero-capability-pills">
+              <span class="cap-pill">Tenant Architecture &amp; Build</span>
+              <span class="cap-pill">Autopilot</span>
+              <span class="cap-pill">Intune</span>
+              <span class="cap-pill">Jamf</span>
+              <span class="cap-pill">MDM</span>
+              <span class="cap-pill">Endpoint Security</span>
+              <span class="cap-pill">Automation</span>
+              <span class="cap-pill">Client Enablement</span>
+            </div>
 
-          <!-- HERO -->
-          <section id="dashboard" class="card hero-card">
-            <div class="hero-text">
-              <div class="hero-badge-row">
-                <span class="hero-pill-badge">Principal Infrastructure Engineer</span>
-                <span class="hero-pill-sub">Endpoint &amp; EUC Engineering</span>
+            <div class="hero-highlights">
+              <div class="highlight-item">
+                <span class="hl-num">8+</span>
+                <span class="hl-label">YEARS EXPERIENCE</span>
               </div>
-              <h1 class="hero-heading">Hi, I'm Abhijith M <span class="wave">👋</span></h1>
-              <p class="hero-desc">I architect, deploy, and automate enterprise endpoint solutions using Microsoft Intune, PowerShell, Microsoft Graph API, and Windows technologies to deliver secure, scalable IT ecosystems.</p>
-              
-              <div class="hero-highlights">
-                <div class="highlight-item">
-                  <span class="hl-num">8+</span>
-                  <span class="hl-label">Years Experience</span>
-                </div>
-                <div class="highlight-item">
-                  <span class="hl-num">5</span>
-                  <span class="hl-label">Certifications</span>
-                </div>
-                <div class="highlight-item">
-                  <span class="hl-num">4</span>
-                  <span class="hl-label">OS Platforms</span>
-                </div>
-                <div class="highlight-item">
-                  <span class="hl-num">100%</span>
-                  <span class="hl-label">Automation Focus</span>
-                </div>
+              <div class="highlight-item">
+                <span class="hl-num">6</span>
+                <span class="hl-label">CERTIFICATIONS</span>
               </div>
+              <div class="highlight-item">
+                <span class="hl-num">4.8K+</span>
+                <span class="hl-label">ENDPOINTS MANAGED</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-num">100%</span>
+                <span class="hl-label">AUTOPILOT OSD</span>
+              </div>
+            </div>
 
-              <div class="hero-actions">
-                <a href="resume.pdf" download class="btn btn-primary">
-                  <svg viewBox="0 0 24 24" class="icon"><path d="M12 3v12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 21h14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
-                  Download Resume
-                </a>
-                <a href="#contact" class="btn btn-secondary">
-                  <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                  Get in Touch
-                </a>
-                <a href="https://www.linkedin.com/in/abhijithmohanan/" target="_blank" rel="noopener" class="btn btn-secondary btn-icon-only" aria-label="LinkedIn Profile">
+            <div class="hero-actions">
+              <a href="resume.pdf" download class="btn btn-primary">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M12 3v12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 21h14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                Download Resume
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Get in Touch
+              </a>
+              <a href="https://www.linkedin.com/in/abhijithmohanan/" target="_blank" rel="noopener" class="btn btn-secondary btn-icon-only" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" class="icon"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M7 10v7M7 7v.01M12 17v-4.5a2 2 0 1 1 4 0V17M12 12.5V17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+              </a>
+              <a href="https://github.com/Abhijithmohana" target="_blank" rel="noopener" class="btn btn-secondary btn-icon-only" aria-label="GitHub Profile" title="GitHub Profile">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2z" fill="currentColor"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- PROFILE OVERVIEW CARD (TOP-RIGHT) -->
+          <div class="card profile-overview-card">
+            <div class="profile-card-header">
+              <span class="section-title small">Profile Overview</span>
+              <span class="status-pill mini">
+                <span class="status-dot"></span>
+                <span>Active</span>
+              </span>
+            </div>
+            
+            <div class="profile-top-compact">
+              <div class="profile-avatar-wrap">
+                <img src="profile.jpg" alt="Abhijith Mohanan" class="profile-avatar" />
+              </div>
+              <div class="profile-top-info">
+                <h3 class="profile-name">Abhijith Mohanan</h3>
+                <p class="profile-role">Principal Infrastructure Engineer | EUC &amp; Endpoint Architecture</p>
+                <span class="profile-location">📍 India · Remote / Hybrid | Bangalore</span>
+              </div>
+            </div>
+
+            <div class="profile-spec-summary">
+              <div class="spec-summary-item">
+                <span class="spec-icon">⚡</span>
+                <span class="spec-text">Intune &amp; Jamf Tenant Architecture • Zero-Touch Autopilot</span>
+              </div>
+              <div class="spec-summary-item">
+                <span class="spec-icon">🛡️</span>
+                <span class="spec-text">Cross-Platform MDM • Endpoint Security • Client Enablement</span>
+              </div>
+            </div>
+
+            <div class="profile-quick-contact-grid">
+              <a href="mailto:Abhijith.mohanan@hotmail.com" class="profile-contact-pill" id="emailContactTop" title="Click to copy email">
+                <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Abhijith.mohanan@hotmail.com</span>
+              </a>
+              <div class="profile-links-row">
+                <a href="https://www.linkedin.com/in/abhijithmohanan/" target="_blank" rel="noopener" class="profile-mini-link">
                   <svg viewBox="0 0 24 24" class="icon"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M7 10v7M7 7v.01M12 17v-4.5a2 2 0 1 1 4 0V17M12 12.5V17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                  <span>LinkedIn</span>
                 </a>
+                <a href="https://github.com/Abhijithmohana" target="_blank" rel="noopener" class="profile-mini-link" id="githubProfileLink">
+                  <svg viewBox="0 0 24 24" class="icon"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2z" fill="currentColor"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <div class="profile-fleet-tag">
+                  <span class="dot-live"></span> 99.4% Compliant
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= FULL-WIDTH ROW: WHAT I BUILD ================= -->
+        <section id="what-i-build" class="card what-i-build-card">
+          <div class="card-header-flex">
+            <div>
+              <div class="header-title-row">
+                <h2 class="section-title small">What I Build</h2>
+                <span class="category-pill-highlight">Endpoint &amp; EUC Architecture</span>
+              </div>
+              <p class="section-subtitle">Enterprise endpoint architectures, automated deployments &amp; modern workplace solutions</p>
+            </div>
+            <div class="section-badge-group">
+              <span class="section-badge">6 Core Capabilities</span>
+            </div>
+          </div>
+
+          <div class="wib-grid">
+            <div class="wib-card">
+              <div class="wib-icon-wrap icon-blue">🏗️</div>
+              <div class="wib-content">
+                <h3 class="wib-title">Tenant Engineering</h3>
+                <p class="wib-desc">Intune / Jamf environments built and structured from the ground up</p>
               </div>
             </div>
 
-            <div class="hero-illustration">
-              <img src="hero-devices.jpg" alt="Enterprise Endpoint Management Ecosystem - Windows, macOS, iOS, Android devices" class="hero-img" referrerPolicy="no-referrer" />
+            <div class="wib-card">
+              <div class="wib-icon-wrap icon-purple">💻</div>
+              <div class="wib-content">
+                <h3 class="wib-title">Zero-Touch Deployment</h3>
+                <p class="wib-desc">Windows Autopilot and automated endpoint provisioning</p>
+              </div>
             </div>
-          </section>
 
-          <!-- CONSOLIDATED ENDPOINT & CORE EXPERTISE MATRIX -->
-          <section id="overview" class="card section-compact">
+            <div class="wib-card">
+              <div class="wib-icon-wrap icon-yellow">🔐</div>
+              <div class="wib-content">
+                <h3 class="wib-title">Endpoint Security</h3>
+                <p class="wib-desc">Security baselines, compliance, policies and endpoint controls</p>
+              </div>
+            </div>
+
+            <div class="wib-card">
+              <div class="wib-icon-wrap icon-teal">⚙️</div>
+              <div class="wib-content">
+                <h3 class="wib-title">Automation</h3>
+                <p class="wib-desc">PowerShell, Microsoft Graph API, remediation and workflow automation</p>
+              </div>
+            </div>
+
+            <div class="wib-card">
+              <div class="wib-icon-wrap icon-cyan">📱</div>
+              <div class="wib-content">
+                <h3 class="wib-title">Cross-Platform MDM</h3>
+                <p class="wib-desc">Windows, macOS, iOS and Android endpoint management</p>
+              </div>
+            </div>
+
+            <div class="wib-card">
+              <div class="wib-icon-wrap icon-green">🤝</div>
+              <div class="wib-content">
+                <h3 class="wib-title">Client Enablement</h3>
+                <p class="wib-desc">Endpoint modernization, technical guidance and operational transformation</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= FULL-WIDTH ROW: ENGINEERING LIFECYCLE ================= -->
+        <section id="lifecycle" class="card lifecycle-card">
+          <div class="card-header-flex">
+            <div>
+              <div class="header-title-row">
+                <h2 class="section-title small">Engineering Lifecycle</h2>
+                <span class="category-pill-highlight">Operational Methodology</span>
+              </div>
+              <p class="section-subtitle">Structured, end-to-end framework for modern endpoint &amp; infrastructure delivery</p>
+            </div>
+            <div class="section-badge-group">
+              <span class="section-badge">8-Stage Workflow</span>
+            </div>
+          </div>
+
+          <div class="lifecycle-flow-wrapper">
+            <div class="lifecycle-step-item">
+              <div class="step-num">01</div>
+              <div class="step-node">
+                <span class="step-label">ASSESS</span>
+              </div>
+            </div>
+            <div class="step-arrow" aria-hidden="true">→</div>
+
+            <div class="lifecycle-step-item">
+              <div class="step-num">02</div>
+              <div class="step-node">
+                <span class="step-label">ARCHITECT</span>
+              </div>
+            </div>
+            <div class="step-arrow" aria-hidden="true">→</div>
+
+            <div class="lifecycle-step-item">
+              <div class="step-num">03</div>
+              <div class="step-node">
+                <span class="step-label">BUILD</span>
+              </div>
+            </div>
+            <div class="step-arrow" aria-hidden="true">→</div>
+
+            <div class="lifecycle-step-item">
+              <div class="step-num">04</div>
+              <div class="step-node">
+                <span class="step-label">DEPLOY</span>
+              </div>
+            </div>
+            <div class="step-arrow" aria-hidden="true">→</div>
+
+            <div class="lifecycle-step-item">
+              <div class="step-num">05</div>
+              <div class="step-node">
+                <span class="step-label">SECURE</span>
+              </div>
+            </div>
+            <div class="step-arrow" aria-hidden="true">→</div>
+
+            <div class="lifecycle-step-item">
+              <div class="step-num">06</div>
+              <div class="step-node">
+                <span class="step-label">AUTOMATE</span>
+              </div>
+            </div>
+            <div class="step-arrow" aria-hidden="true">→</div>
+
+            <div class="lifecycle-step-item">
+              <div class="step-num">07</div>
+              <div class="step-node">
+                <span class="step-label">OPERATE</span>
+              </div>
+            </div>
+            <div class="step-arrow" aria-hidden="true">→</div>
+
+            <div class="lifecycle-step-item">
+              <div class="step-num">08</div>
+              <div class="step-node">
+                <span class="step-label">OPTIMIZE</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= FULL-WIDTH ROW: EXPANDED TECHNICAL PROFICIENCY (30 DOMAINS ACROSS 6 CATEGORIES) ================= -->
+        <section id="skills" class="card skills-expanded-card">
+          <div class="card-header-flex">
+            <div>
+              <div class="header-title-row">
+                <h2 class="section-title small">Technical Proficiency</h2>
+                <span class="category-pill-highlight">Endpoint · Infrastructure · Automation · AI-Assisted</span>
+              </div>
+              <p class="section-subtitle">Comprehensive engineering capabilities, platform mastery &amp; automated toolchains</p>
+            </div>
+            <div class="section-badge-group">
+              <span class="section-badge">30 Technical Domains</span>
+              <span class="section-badge badge-subtle">6 Specializations</span>
+            </div>
+          </div>
+
+          <!-- Specialization Filter Chips -->
+          <div class="skills-filter-nav" role="tablist" aria-label="Technical Skill Categories">
+            <button class="skill-tab-btn active" data-category="all" role="tab" aria-selected="true">
+              <span class="tab-dot"></span> All Specializations (30)
+            </button>
+            <button class="skill-tab-btn priority-btn" data-category="endpoint" role="tab" aria-selected="false">
+              <span class="tab-icon">💻</span> Endpoint &amp; EUC <span class="tab-count">5</span>
+            </button>
+            <button class="skill-tab-btn" data-category="identity" role="tab" aria-selected="false">
+              <span class="tab-icon">☁️</span> Identity &amp; Cloud <span class="tab-count">5</span>
+            </button>
+            <button class="skill-tab-btn priority-btn" data-category="infrastructure" role="tab" aria-selected="false">
+              <span class="tab-icon">🖥️</span> Infrastructure &amp; Devices <span class="tab-count">5</span>
+            </button>
+            <button class="skill-tab-btn" data-category="itsm" role="tab" aria-selected="false">
+              <span class="tab-icon">📋</span> IT Operations &amp; ITSM <span class="tab-count">5</span>
+            </button>
+            <button class="skill-tab-btn" data-category="automation" role="tab" aria-selected="false">
+              <span class="tab-icon">⚡</span> Automation &amp; Dev Tools <span class="tab-count">5</span>
+            </button>
+            <button class="skill-tab-btn ai-btn" data-category="ai" role="tab" aria-selected="false">
+              <span class="tab-icon">✨</span> AI-Assisted Engineering <span class="tab-count">5</span>
+            </button>
+          </div>
+
+          <!-- 6 Categorized Skill Blocks Grid (Exactly 5 rows per card) -->
+          <div class="skills-categories-grid">
+            <!-- Category 1: ENDPOINT & EUC (5 skills) -->
+            <div class="skill-category-card domain-core" data-category="endpoint">
+              <div class="cat-card-header">
+                <div class="cat-header-left">
+                  <div class="cat-icon cat-icon-blue">💻</div>
+                  <div>
+                    <h3 class="cat-title">Endpoint &amp; EUC</h3>
+                    <span class="cat-sub">Modern Workplace &amp; Fleet Management</span>
+                  </div>
+                </div>
+                <span class="cat-badge cat-badge-core">Core Focus · 5</span>
+              </div>
+              <div class="skills-list">
+                <div class="skill-row" data-level="90">
+                  <div class="skill-top"><span class="skill-name">Microsoft Intune</span><span class="skill-label">90%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-blue"></div></div>
+                </div>
+                <div class="skill-row" data-level="90">
+                  <div class="skill-top"><span class="skill-name">Windows 10/11, Windows Administration</span><span class="skill-label">90%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-blue"></div></div>
+                </div>
+                <div class="skill-row" data-level="90">
+                  <div class="skill-top"><span class="skill-name">PowerShell Automation, Scripting</span><span class="skill-label">90%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-blue"></div></div>
+                </div>
+                <div class="skill-row" data-level="85">
+                  <div class="skill-top"><span class="skill-name">App Packaging, Win32, MSI</span><span class="skill-label">85%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-blue"></div></div>
+                </div>
+                <div class="skill-row" data-level="75">
+                  <div class="skill-top"><span class="skill-name">Windows Autopilot, macOS, iOS &amp; Android MDM</span><span class="skill-label">75%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-blue"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 2: IDENTITY, CLOUD & MICROSOFT (5 skills) -->
+            <div class="skill-category-card domain-cloud" data-category="identity">
+              <div class="cat-card-header">
+                <div class="cat-header-left">
+                  <div class="cat-icon cat-icon-azure">☁️</div>
+                  <div>
+                    <h3 class="cat-title">Identity, Cloud &amp; Microsoft</h3>
+                    <span class="cat-sub">Entra ID, Graph API &amp; M365 Services</span>
+                  </div>
+                </div>
+                <span class="cat-badge cat-badge-azure">Cloud &amp; API · 5</span>
+              </div>
+              <div class="skills-list">
+                <div class="skill-row" data-level="75">
+                  <div class="skill-top"><span class="skill-name">Entra ID / Azure AD</span><span class="skill-label">75%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-azure"></div></div>
+                </div>
+                <div class="skill-row" data-level="70">
+                  <div class="skill-top"><span class="skill-name">Microsoft Graph API, REST API, JSON</span><span class="skill-label">70%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-azure"></div></div>
+                </div>
+                <div class="skill-row" data-level="70">
+                  <div class="skill-top"><span class="skill-name">Microsoft 365 Administration</span><span class="skill-label">70%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-azure"></div></div>
+                </div>
+                <div class="skill-row" data-level="65">
+                  <div class="skill-top"><span class="skill-name">Cloud Fundamentals, Azure</span><span class="skill-label">65%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-azure"></div></div>
+                </div>
+                <div class="skill-row" data-level="70">
+                  <div class="skill-top"><span class="skill-name">Conditional Access, RBAC, Identity &amp; Access</span><span class="skill-label">70%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-azure"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 3: INFRASTRUCTURE & DEVICES (5 skills) -->
+            <div class="skill-category-card domain-core" data-category="infrastructure">
+              <div class="cat-card-header">
+                <div class="cat-header-left">
+                  <div class="cat-icon cat-icon-blue">🖥️</div>
+                  <div>
+                    <h3 class="cat-title">Infrastructure &amp; Devices</h3>
+                    <span class="cat-sub">Lifecycle, Systems &amp; Hardware Diagnostics</span>
+                  </div>
+                </div>
+                <span class="cat-badge cat-badge-core">Core Focus · 5</span>
+              </div>
+              <div class="skills-list">
+                <div class="skill-row" data-level="75">
+                  <div class="skill-top"><span class="skill-name">Hardware &amp; Device Lifecycle</span><span class="skill-label">75%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-blue"></div></div>
+                </div>
+                <div class="skill-row" data-level="85">
+                  <div class="skill-top"><span class="skill-name">Endpoint Troubleshooting, Diagnostics</span><span class="skill-label">85%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-blue"></div></div>
+                </div>
+                <div class="skill-row" data-level="65">
+                  <div class="skill-top"><span class="skill-name">Infrastructure Fundamentals</span><span class="skill-label">65%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-blue"></div></div>
+                </div>
+                <div class="skill-row" data-level="65">
+                  <div class="skill-top"><span class="skill-name">Networking, DNS, DHCP, TCP/IP</span><span class="skill-label">65%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-blue"></div></div>
+                </div>
+                <div class="skill-row" data-level="70">
+                  <div class="skill-top"><span class="skill-name">Asset Management, CMDB, Device Inventory</span><span class="skill-label">70%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-blue"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 4: IT OPERATIONS & ITSM (5 skills) -->
+            <div class="skill-category-card domain-itsm" data-category="itsm">
+              <div class="cat-card-header">
+                <div class="cat-header-left">
+                  <div class="cat-icon cat-icon-amber">📋</div>
+                  <div>
+                    <h3 class="cat-title">IT Operations &amp; ITSM</h3>
+                    <span class="cat-sub">ServiceNow, ITIL &amp; Incident Governance</span>
+                  </div>
+                </div>
+                <span class="cat-badge cat-badge-amber">ITSM · 5</span>
+              </div>
+              <div class="skills-list">
+                <div class="skill-row" data-level="65">
+                  <div class="skill-top"><span class="skill-name">ServiceNow</span><span class="skill-label">65%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-amber"></div></div>
+                </div>
+                <div class="skill-row" data-level="65">
+                  <div class="skill-top"><span class="skill-name">Jira, Jira Service Management</span><span class="skill-label">65%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-amber"></div></div>
+                </div>
+                <div class="skill-row" data-level="70">
+                  <div class="skill-top"><span class="skill-name">ITIL, IT Service Management</span><span class="skill-label">70%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-amber"></div></div>
+                </div>
+                <div class="skill-row" data-level="70">
+                  <div class="skill-top"><span class="skill-name">Incident, Problem, Change Management</span><span class="skill-label">70%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-amber"></div></div>
+                </div>
+                <div class="skill-row" data-level="80">
+                  <div class="skill-top"><span class="skill-name">Technical Documentation, RCA, Knowledge Management</span><span class="skill-label">80%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-amber"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 5: AUTOMATION & DEV TOOLS (5 skills) -->
+            <div class="skill-category-card domain-automation" data-category="automation">
+              <div class="cat-card-header">
+                <div class="cat-header-left">
+                  <div class="cat-icon cat-icon-teal">⚡</div>
+                  <div>
+                    <h3 class="cat-title">Automation &amp; Dev Tools</h3>
+                    <span class="cat-sub">Git, Workflows, Shell &amp; IDE Toolchains</span>
+                  </div>
+                </div>
+                <span class="cat-badge cat-badge-teal">Automation · 5</span>
+              </div>
+              <div class="skills-list">
+                <div class="skill-row" data-level="75">
+                  <div class="skill-top"><span class="skill-name">GitHub, Git, Version Control</span><span class="skill-label">75%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-teal"></div></div>
+                </div>
+                <div class="skill-row" data-level="85">
+                  <div class="skill-top"><span class="skill-name">Visual Studio Code</span><span class="skill-label">85%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-teal"></div></div>
+                </div>
+                <div class="skill-row" data-level="75">
+                  <div class="skill-top"><span class="skill-name">CLI, Shell Automation</span><span class="skill-label">75%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-teal"></div></div>
+                </div>
+                <div class="skill-row" data-level="80">
+                  <div class="skill-top"><span class="skill-name">Automation Workflows, Scripting</span><span class="skill-label">80%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-teal"></div></div>
+                </div>
+                <div class="skill-row" data-level="75">
+                  <div class="skill-top"><span class="skill-name">API Integration, DevOps Fundamentals</span><span class="skill-label">75%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-teal"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 6: AI-ASSISTED ENGINEERING (5 skills) -->
+            <div class="skill-category-card domain-ai" data-category="ai">
+              <div class="cat-card-header">
+                <div class="cat-header-left">
+                  <div class="cat-icon cat-icon-purple">✨</div>
+                  <div>
+                    <h3 class="cat-title">AI-Assisted Engineering</h3>
+                    <span class="cat-sub">Modern Accelerator &amp; AI Engineering Tooling</span>
+                  </div>
+                </div>
+                <span class="cat-badge cat-badge-purple">Accelerator · 5</span>
+              </div>
+              <div class="skills-list">
+                <div class="skill-row" data-level="85">
+                  <div class="skill-top"><span class="skill-name">AI-Assisted Engineering</span><span class="skill-label">85%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-purple"></div></div>
+                </div>
+                <div class="skill-row" data-level="80">
+                  <div class="skill-top"><span class="skill-name">GitHub Copilot, AI Coding</span><span class="skill-label">80%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-purple"></div></div>
+                </div>
+                <div class="skill-row" data-level="85">
+                  <div class="skill-top"><span class="skill-name">AI Code Generation, Vibe Coding</span><span class="skill-label">85%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-purple"></div></div>
+                </div>
+                <div class="skill-row" data-level="85">
+                  <div class="skill-top"><span class="skill-name">AI-Assisted Troubleshooting</span><span class="skill-label">85%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-purple"></div></div>
+                </div>
+                <div class="skill-row" data-level="85">
+                  <div class="skill-top"><span class="skill-name">AI Documentation, Analysis, Automation</span><span class="skill-label">85%</span></div>
+                  <div class="skill-bar"><div class="skill-fill fill-purple"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= FULL-WIDTH ROW: VERIFIED CERTIFICATIONS (6 CARDS) ================= -->
+        <section id="certifications" class="card cert-full-card">
+          <div class="card-header-flex">
+            <div>
+              <h2 class="section-title small">Verified Certifications</h2>
+              <p class="section-subtitle">Accredited Microsoft, Nexthink &amp; Security credentials</p>
+            </div>
+            <div class="section-badge-group">
+              <span class="section-badge">6 Verified</span>
+              <span class="section-badge badge-subtle">Industry Credentials</span>
+            </div>
+          </div>
+
+          <div class="cert-grid-6">
+            <!-- Cert 1: Certified Nexthink Expert -->
+            <div class="cert-card-item">
+              <div class="cert-card-top">
+                <div class="cert-brand-badge brand-nexthink-expert" title="Nexthink Certified Expert">
+                  <svg viewBox="0 0 100 130" class="cert-badge-svg" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 8 C10 8, 90 8, 90 8 C92 8, 94 10, 94 12 L94 88 C94 108, 50 124, 50 124 C50 124, 6 108, 6 88 L6 12 C6 10, 8 8, 10 8 Z" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+                    <path d="M6 12 C6 10, 8 8, 10 8 L90 8 C92 8, 94 10, 94 12 L94 36 L6 36 Z" fill="#0b1736"/>
+                    <text x="50" y="21" font-size="7" font-weight="900" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" letter-spacing="1">NEXTHINK</text>
+                    <text x="50" y="30" font-size="6.2" font-weight="800" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" letter-spacing="1.2">CERTIFIED</text>
+                    <rect x="6" y="36" width="88" height="34" fill="#ffffff"/>
+                    <text x="50" y="47" font-size="8.8" font-weight="700" text-anchor="middle" fill="#111827" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Nexthink</text>
+                    <rect x="40" y="52" width="20" height="20" rx="4" fill="#0b1736"/>
+                    <path d="M45 66 V57 h3.2 l4.6 6.2 V57 h3.2 v9 h-3.2 L48.2 59.8 V66 Z" fill="#ffffff"/>
+                    <path d="M6 70 L94 70 L94 88 C94 108, 50 124, 50 124 C50 124, 6 108, 6 88 Z" fill="#e5a823"/>
+                    <text x="50" y="98" font-size="10.5" font-weight="700" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Expert</text>
+                  </svg>
+                </div>
+                <span class="badge-valid">Jul '26 – '28</span>
+              </div>
+              <div class="cert-card-body">
+                <h3 class="cert-card-title">Certified Nexthink Expert</h3>
+                <div class="cert-card-issuer">
+                  <span>Nexthink</span> · <a href="https://learn.nexthink.com/c/s/WDCkpR0wbT8Rft_JixPjIZboR6eOunNudNF0RQa3RBjQQ6MG_xG5dbdMgNzUZXjP" target="_blank" rel="noopener" class="cert-link">Verify ↗</a>
+                </div>
+              </div>
+              <div class="cert-divider"></div>
+              <ul class="cert-capability-list">
+                <li><span class="bullet-dot"></span>Digital Employee Experience</li>
+                <li><span class="bullet-dot"></span>Endpoint Analytics</li>
+                <li><span class="bullet-dot"></span>Experience Optimization</li>
+                <li><span class="bullet-dot"></span>Proactive Remediation</li>
+              </ul>
+            </div>
+
+            <!-- Cert 2: Certified Nexthink Professional in IT Support -->
+            <div class="cert-card-item">
+              <div class="cert-card-top">
+                <div class="cert-brand-badge brand-nexthink-itsupport" title="Nexthink Certified IT Support Professional">
+                  <svg viewBox="0 0 100 130" class="cert-badge-svg" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 8 C10 8, 90 8, 90 8 C92 8, 94 10, 94 12 L94 88 C94 108, 50 124, 50 124 C50 124, 6 108, 6 88 L6 12 C6 10, 8 8, 10 8 Z" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+                    <path d="M6 12 C6 10, 8 8, 10 8 L90 8 C92 8, 94 10, 94 12 L94 36 L6 36 Z" fill="#0b1736"/>
+                    <text x="50" y="21" font-size="7" font-weight="900" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" letter-spacing="1">NEXTHINK</text>
+                    <text x="50" y="30" font-size="6.2" font-weight="800" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" letter-spacing="1.2">CERTIFIED</text>
+                    <rect x="6" y="36" width="88" height="34" fill="#ffffff"/>
+                    <text x="50" y="47" font-size="8.8" font-weight="700" text-anchor="middle" fill="#111827" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">IT Support</text>
+                    <rect x="40" y="52" width="20" height="20" rx="4" fill="#0b1736"/>
+                    <path d="M45 66 V57 h3.2 l4.6 6.2 V57 h3.2 v9 h-3.2 L48.2 59.8 V66 Z" fill="#ffffff"/>
+                    <path d="M6 70 L94 70 L94 88 C94 108, 50 124, 50 124 C50 124, 6 108, 6 88 Z" fill="#0052cc"/>
+                    <text x="50" y="98" font-size="9.5" font-weight="700" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Professional</text>
+                  </svg>
+                </div>
+                <span class="badge-valid">Professional</span>
+              </div>
+              <div class="cert-card-body">
+                <h3 class="cert-card-title">Certified Nexthink Professional in IT Support</h3>
+                <div class="cert-card-issuer">
+                  <span>Nexthink</span> · <a href="https://learn.nexthink.com/c/O2NqX2reT2SzPbmuffn8ZA" target="_blank" rel="noopener" class="cert-link">Verify ↗</a>
+                </div>
+              </div>
+              <div class="cert-divider"></div>
+              <ul class="cert-capability-list">
+                <li><span class="bullet-dot"></span>IT Support</li>
+                <li><span class="bullet-dot"></span>Digital Employee Experience</li>
+                <li><span class="bullet-dot"></span>Endpoint Support</li>
+                <li><span class="bullet-dot"></span>User Experience &amp; Troubleshooting</li>
+              </ul>
+            </div>
+
+            <!-- Cert 3: M365: Administrator Expert -->
+            <div class="cert-card-item">
+              <div class="cert-card-top">
+                <div class="cert-brand-badge brand-ms-expert" title="Microsoft Certified Enterprise Administrator Expert">
+                  <svg viewBox="0 0 100 125" class="cert-badge-svg" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 6 C12 6, 88 6, 88 6 C92 6, 95 9, 95 13 L95 80 C95 102, 50 120, 50 120 C50 120, 5 102, 5 80 L5 13 C5 9, 8 6, 12 6 Z" fill="#002050"/>
+                    <text x="50" y="24" font-size="8" font-weight="700" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Microsoft</text>
+                    <text x="50" y="34" font-size="6.2" font-weight="700" text-anchor="middle" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" letter-spacing="1">CERTIFIED</text>
+                    <path d="M5 48 L95 48 L95 80 C95 102, 50 120, 50 120 C50 120, 5 102, 5 80 Z" fill="#0078d4"/>
+                    <path d="M50 78 l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8z" fill="#ffffff"/>
+                    <path d="M30 83 l2.2 4.4 4.8.7-3.5 3.4.8 4.8-4.3-2.3-4.3 2.3.8-4.8-3.5-3.4 4.8-.7z" fill="#ffffff"/>
+                    <path d="M70 83 l2.2 4.4 4.8.7-3.5 3.4.8 4.8-4.3-2.3-4.3 2.3.8-4.8-3.5-3.4 4.8-.7z" fill="#ffffff"/>
+                    <path d="M2 42 C20 45, 80 45, 98 42 L98 62 C80 65, 20 65, 2 62 Z" fill="#ffffff" stroke="#334155" stroke-width="1.8"/>
+                    <text x="50" y="56" font-size="11.5" font-weight="900" text-anchor="middle" fill="#1e293b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" letter-spacing="0.5">EXPERT</text>
+                  </svg>
+                </div>
+                <span class="badge-valid">Jun '23 – '27</span>
+              </div>
+              <div class="cert-card-body">
+                <h3 class="cert-card-title">M365: Administrator Expert</h3>
+                <div class="cert-card-issuer">
+                  <span>Microsoft</span> · <a href="https://learn.microsoft.com/en-us/users/abhijithm-9071/credentials/bf19ce877519aa37?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener" class="cert-link">Verify ↗</a>
+                </div>
+              </div>
+              <div class="cert-divider"></div>
+              <ul class="cert-capability-list">
+                <li><span class="bullet-dot"></span>Microsoft 365 Administration</li>
+                <li><span class="bullet-dot"></span>Identity &amp; Access Management</li>
+                <li><span class="bullet-dot"></span>Security &amp; Compliance</li>
+                <li><span class="bullet-dot"></span>Service Health &amp; Support</li>
+              </ul>
+            </div>
+
+            <!-- Cert 4: Security Operations Analyst -->
+            <div class="cert-card-item">
+              <div class="cert-card-top">
+                <div class="cert-brand-badge brand-ms-associate" title="Microsoft Certified Security Operations Analyst Associate">
+                  <svg viewBox="0 0 100 125" class="cert-badge-svg" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 6 C12 6, 88 6, 88 6 C92 6, 95 9, 95 13 L95 80 C95 102, 50 120, 50 120 C50 120, 5 102, 5 80 L5 13 C5 9, 8 6, 12 6 Z" fill="#002050"/>
+                    <text x="50" y="24" font-size="8" font-weight="700" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Microsoft</text>
+                    <text x="50" y="34" font-size="6.2" font-weight="700" text-anchor="middle" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" letter-spacing="1">CERTIFIED</text>
+                    <path d="M5 48 L95 48 L95 80 C95 102, 50 120, 50 120 C50 120, 5 102, 5 80 Z" fill="#0078d4"/>
+                    <path d="M38 82 l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8z" fill="#ffffff"/>
+                    <path d="M62 82 l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8z" fill="#ffffff"/>
+                    <path d="M2 42 C20 45, 80 45, 98 42 L98 62 C80 65, 20 65, 2 62 Z" fill="#ffffff" stroke="#334155" stroke-width="1.8"/>
+                    <text x="50" y="56" font-size="9" font-weight="900" text-anchor="middle" fill="#1e293b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" letter-spacing="0.5">ASSOCIATE</text>
+                  </svg>
+                </div>
+                <span class="badge-valid">Jun '26 – '27</span>
+              </div>
+              <div class="cert-card-body">
+                <h3 class="cert-card-title">Security Operations Analyst</h3>
+                <div class="cert-card-issuer">
+                  <span>Microsoft Associate</span> · <a href="https://learn.microsoft.com/en-us/users/abhijithm-9071/credentials/7dd02a3677ef0311?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener" class="cert-link">Verify ↗</a>
+                </div>
+              </div>
+              <div class="cert-divider"></div>
+              <ul class="cert-capability-list">
+                <li><span class="bullet-dot"></span>Threat Detection &amp; Response</li>
+                <li><span class="bullet-dot"></span>SIEM &amp; Log Analytics</li>
+                <li><span class="bullet-dot"></span>Incident Investigation</li>
+                <li><span class="bullet-dot"></span>Security Monitoring</li>
+              </ul>
+            </div>
+
+            <!-- Cert 5: Endpoint Administrator -->
+            <div class="cert-card-item">
+              <div class="cert-card-top">
+                <div class="cert-brand-badge brand-ms-associate" title="Microsoft Certified Endpoint Administrator Associate">
+                  <svg viewBox="0 0 100 125" class="cert-badge-svg" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 6 C12 6, 88 6, 88 6 C92 6, 95 9, 95 13 L95 80 C95 102, 50 120, 50 120 C50 120, 5 102, 5 80 L5 13 C5 9, 8 6, 12 6 Z" fill="#002050"/>
+                    <text x="50" y="24" font-size="8" font-weight="700" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Microsoft</text>
+                    <text x="50" y="34" font-size="6.2" font-weight="700" text-anchor="middle" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" letter-spacing="1">CERTIFIED</text>
+                    <path d="M5 48 L95 48 L95 80 C95 102, 50 120, 50 120 C50 120, 5 102, 5 80 Z" fill="#0078d4"/>
+                    <path d="M38 82 l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8z" fill="#ffffff"/>
+                    <path d="M62 82 l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8z" fill="#ffffff"/>
+                    <path d="M2 42 C20 45, 80 45, 98 42 L98 62 C80 65, 20 65, 2 62 Z" fill="#ffffff" stroke="#334155" stroke-width="1.8"/>
+                    <text x="50" y="56" font-size="9" font-weight="900" text-anchor="middle" fill="#1e293b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" letter-spacing="0.5">ASSOCIATE</text>
+                  </svg>
+                </div>
+                <span class="badge-valid">Jun '25 – '27</span>
+              </div>
+              <div class="cert-card-body">
+                <h3 class="cert-card-title">Endpoint Administrator</h3>
+                <div class="cert-card-issuer">
+                  <span>Microsoft Associate</span> · <a href="https://learn.microsoft.com/en-us/users/abhijithm-9071/credentials/eeadf478c2d77955?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener" class="cert-link">Verify ↗</a>
+                </div>
+              </div>
+              <div class="cert-divider"></div>
+              <ul class="cert-capability-list">
+                <li><span class="bullet-dot"></span>Endpoint Management</li>
+                <li><span class="bullet-dot"></span>Policy &amp; Compliance</li>
+                <li><span class="bullet-dot"></span>Application Deployment</li>
+                <li><span class="bullet-dot"></span>Windows &amp; Device Management</li>
+              </ul>
+            </div>
+
+            <!-- Cert 6: CNSP - Network Security -->
+            <div class="cert-card-item">
+              <div class="cert-card-top">
+                <div class="cert-brand-badge brand-secops" title="The SecOps Group Certified Network Security Practitioner">
+                  <svg viewBox="0 0 100 125" class="cert-badge-svg" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="50,6 88,24 88,76 50,118 12,76 12,24" fill="#1c0f0a" stroke="#FF5722" stroke-width="3"/>
+                    <polygon points="50,14 80,29 80,72 50,108 20,72 20,29" fill="#2a1208"/>
+                    <text x="50" y="44" font-size="11" font-weight="900" text-anchor="middle" fill="#FF5722" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" letter-spacing="0.8">SECOPS</text>
+                    <rect x="36" y="56" width="28" height="22" rx="4" fill="#FF5722"/>
+                    <path d="M42 56 v-8 a8 8 0 0 1 16 0 v8" stroke="#ffffff" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+                    <circle cx="50" cy="67" r="3.5" fill="#ffffff"/>
+                    <text x="50" y="94" font-size="7.5" font-weight="800" text-anchor="middle" fill="#ff8a65" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" letter-spacing="0.5">CNSP</text>
+                  </svg>
+                </div>
+                <span class="badge-lifetime">Lifetime</span>
+              </div>
+              <div class="cert-card-body">
+                <h3 class="cert-card-title">CNSP - Network Security</h3>
+                <div class="cert-card-issuer">
+                  <span>The SecOps Group · Practitioner</span>
+                </div>
+              </div>
+              <div class="cert-divider"></div>
+              <ul class="cert-capability-list">
+                <li><span class="bullet-dot"></span>Network Security</li>
+                <li><span class="bullet-dot"></span>Threat Prevention</li>
+                <li><span class="bullet-dot"></span>Secure Architecture</li>
+                <li><span class="bullet-dot"></span>Risk Management</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= TWO-COLUMN ROW 2: CAPABILITIES MATRIX & TOOLSTACK/STRENGTHS ================= -->
+        <div class="two-col-grid">
+          <!-- CAPABILITIES MATRIX -->
+          <section id="overview" class="card">
             <div class="card-header-flex">
               <div>
-                <h2 class="section-title small">Endpoint Capabilities &amp; Architecture Matrix</h2>
-                <p class="section-subtitle">Core focus areas across modern management, automation, security and operations</p>
+                <h2 class="section-title small">Endpoint Capabilities &amp; Architecture</h2>
+                <p class="section-subtitle">Core functional pillars across modern infrastructure</p>
               </div>
+              <span class="section-badge">4 Pillars</span>
             </div>
-            <div class="capabilities-grid">
+            <div class="cap-two-col">
               <div class="cap-card">
                 <div class="cap-header">
                   <div class="cap-icon icon-blue">💻</div>
@@ -218,8 +918,8 @@
                 </div>
                 <div class="cap-tags">
                   <span class="mini-tag">PowerShell Automation</span>
-                  <span class="mini-tag">Microsoft Graph API</span>
-                  <span class="mini-tag">Proactive Remediations</span>
+                  <span class="mini-tag">Graph API</span>
+                  <span class="mini-tag">Remediations</span>
                   <span class="mini-tag">Win32 Packaging</span>
                   <span class="mini-tag">REST Endpoints</span>
                 </div>
@@ -238,7 +938,7 @@
                   <span class="mini-tag">BitLocker / FileVault</span>
                   <span class="mini-tag">Entra ID (Azure AD)</span>
                   <span class="mini-tag">Compliance Baselines</span>
-                  <span class="mini-tag">Security Operations</span>
+                  <span class="mini-tag">SecOps</span>
                 </div>
               </div>
 
@@ -254,505 +954,274 @@
                   <span class="mini-tag">Device Lifecycle</span>
                   <span class="mini-tag">Nexthink Analytics</span>
                   <span class="mini-tag">ServiceNow / Jira</span>
-                  <span class="mini-tag">Hardware Persona Sizing</span>
-                  <span class="mini-tag">Escalation &amp; Support</span>
+                  <span class="mini-tag">Hardware Personas</span>
+                  <span class="mini-tag">L3 Escalation</span>
                 </div>
               </div>
             </div>
           </section>
 
-          <!-- SPLIT GRID: PROJECTS + EXPERIENCE -->
-          <div class="split-grid">
-            <!-- PROJECTS -->
-            <section id="projects" class="card">
-              <div class="card-header-flex">
-                <h2 class="section-title small">Featured Projects</h2>
-                <span class="section-badge">4 Delivered</span>
-              </div>
-              <div class="project-list">
-                <div class="project-item">
-                  <div class="project-icon">🖼️</div>
-                  <div class="project-body">
-                    <h4>Dynamic Corporate Wallpaper Solution</h4>
-                    <p>PowerShell automation &amp; Win32 deployment for dynamic user/department branding across hybrid endpoints.</p>
-                    <div class="tag-row"><span class="tag tag-blue">Intune</span><span class="tag tag-cyan">PowerShell</span><span class="tag tag-green">Win32</span></div>
-                  </div>
-                </div>
-                <div class="project-item">
-                  <div class="project-icon">🧩</div>
-                  <div class="project-body">
-                    <h4>Intune Win32 App Automation Framework</h4>
-                    <p>Standardized packaging framework with automated detection rules, install verification, and remediation.</p>
-                    <div class="tag-row"><span class="tag tag-blue">Intune</span><span class="tag tag-cyan">PowerShell</span><span class="tag tag-purple">Packaging</span></div>
-                  </div>
-                </div>
-                <div class="project-item">
-                  <div class="project-icon">🚀</div>
-                  <div class="project-body">
-                    <h4>Autopilot &amp; Modern Endpoint Engineering</h4>
-                    <p>Zero-touch provisioning, hardware persona mapping, and full device lifecycle onboarding strategy.</p>
-                    <div class="tag-row"><span class="tag tag-purple">Autopilot</span><span class="tag tag-green">EUC</span><span class="tag tag-blue">Azure AD</span></div>
-                  </div>
-                </div>
-                <div class="project-item">
-                  <div class="project-icon">🤖</div>
-                  <div class="project-body">
-                    <h4>Graph API &amp; Endpoint Automation</h4>
-                    <p>Automated recurring audit, device hygiene routines, and telemetry collection via Graph API integration.</p>
-                    <div class="tag-row"><span class="tag tag-cyan">PowerShell</span><span class="tag tag-purple">Graph API</span></div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <!-- EXPERIENCE -->
-            <section id="experience" class="card">
-              <div class="card-header-flex">
-                <h2 class="section-title small">Experience Timeline</h2>
-                <span class="section-badge">8+ Years</span>
-              </div>
-              <ul class="timeline">
-                <li class="timeline-item">
-                  <span class="timeline-dot"></span>
-                  <div class="timeline-header">
-                    <h4>Principal Infrastructure Engineer</h4>
-                    <span class="timeline-date">Aug 2026 – Present</span>
-                  </div>
-                  <span class="timeline-sub">Endpoint &amp; EUC Engineering</span>
-                  <p>Leading enterprise endpoint engineering across Windows, macOS, iOS, and Android. Driving device lifecycle, hardware evaluation, persona-based provisioning, application deployment pipelines, and PowerShell automation.</p>
-                </li>
-                <li class="timeline-item">
-                  <span class="timeline-dot"></span>
-                  <div class="timeline-header">
-                    <h4>IT Analyst – Endpoint &amp; EUC</h4>
-                    <span class="timeline-date">Mar 2024 – Aug 2026</span>
-                  </div>
-                  <p>Handled L2/L3 endpoint incidents, configuration troubleshooting, packaging deployment, and operational automation across cross-platform fleets.</p>
-                </li>
-                <li class="timeline-item">
-                  <span class="timeline-dot"></span>
-                  <div class="timeline-header">
-                    <h4>IT Support Engineer II – Endpoint &amp; Hardware</h4>
-                    <span class="timeline-date">Dec 2019 – Mar 2024</span>
-                  </div>
-                  <p>Acted as SPOC for enterprise hardware, peripherals, operating systems, and connectivity troubleshooting across enterprise environments.</p>
-                </li>
-                <li class="timeline-item">
-                  <span class="timeline-dot"></span>
-                  <div class="timeline-header">
-                    <h4>Hardware &amp; Infrastructure Support</h4>
-                    <span class="timeline-date">Earlier Career</span>
-                  </div>
-                  <p>Foundational technical support across desktop hardware, Windows, macOS, networking, and user endpoint onboarding.</p>
-                </li>
-              </ul>
-            </section>
-          </div>
-
-          <!-- CONSOLIDATED ABOUT, STRENGTHS & TOOLSTACK -->
-          <section id="about" class="card section-compact">
-            <div class="about-grid">
-              <div class="about-main">
-                <h2 class="section-title small">Professional Profile &amp; Core Strengths</h2>
-                <p class="about-text">Over 8+ years across enterprise hardware, endpoint support, and infrastructure engineering, progressively specializing in modern endpoint management, EUC architecture, and automation.</p>
-                <p class="about-text">Specialized in Microsoft Intune, PowerShell, Windows Autopilot, enterprise app deployment pipelines, Nexthink digital employee experience (DEX), and Microsoft Graph API integrations.</p>
-                
-                <div id="achievements" class="strengths-chips">
-                  <span class="strength-chip">✓ Enterprise Hardware &amp; Desktop Foundation</span>
-                  <span class="strength-chip">✓ Progressive EUC &amp; Endpoint Specialization</span>
-                  <span class="strength-chip">✓ Full Lifecycle Device Provisioning &amp; Autopilot</span>
-                  <span class="strength-chip">✓ Win32 Application Packaging &amp; Automation</span>
-                  <span class="strength-chip">✓ Proactive Endpoint Remediation Scripts</span>
-                  <span class="strength-chip">✓ Multi-OS: Windows 10/11, macOS, iOS, Android</span>
-                </div>
-              </div>
-
-              <div id="tools" class="about-tools">
-                <h3 class="tools-heading">Toolstack &amp; Technologies</h3>
-                <div class="tools-cloud">
-                  <span class="tool-chip highlight">Microsoft Intune</span>
-                  <span class="tool-chip highlight">PowerShell</span>
-                  <span class="tool-chip highlight">Microsoft Graph API</span>
-                  <span class="tool-chip highlight">Windows Autopilot</span>
-                  <span class="tool-chip">Nexthink</span>
-                  <span class="tool-chip">Entra ID (Azure AD)</span>
-                  <span class="tool-chip">Win32 Apps</span>
-                  <span class="tool-chip">Endpoint Analytics</span>
-                  <span class="tool-chip">Windows 10/11</span>
-                  <span class="tool-chip">macOS MDM</span>
-                  <span class="tool-chip">iOS / Android</span>
-                  <span class="tool-chip">GitHub Enterprise</span>
-                  <span class="tool-chip">ServiceNow</span>
-                  <span class="tool-chip">Jira</span>
-                  <span class="tool-chip">BitLocker / Defender</span>
-                  <span class="tool-chip">EUC Operations</span>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- BENTO ROW: AUTOMATION TERMINAL + INSIGHTS + CONTACT -->
-          <div class="bento-bottom-grid">
-            <!-- AUTOMATION SCRIPT TERMINAL -->
-            <section id="automation" class="card bento-terminal-card">
-              <div class="card-header-flex">
-                <h2 class="section-title small">Automation Console</h2>
-                <span class="terminal-badge">PowerShell Core</span>
-              </div>
-              <div class="terminal">
-                <div class="terminal-header">
-                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                  <span class="terminal-title">pwsh — endpoint-automation.ps1</span>
-                </div>
-                <div class="terminal-body">
-                  <p><span class="prompt">PS&gt;</span> Connect-MgGraph -Scopes "DeviceManagementManagedDevices.ReadWrite.All"</p>
-                  <p class="term-line"><span class="term-green">✓</span> Connected to Microsoft Graph (Tenant: Enterprise Managed)</p>
-                  <p><span class="prompt">PS&gt;</span> Get-EndpointCompliance -Status "All"</p>
-                  <p class="term-line">Target: <span class="term-blue">Windows 11 / macOS</span> | Compliance: <span class="term-green">99.4%</span> | State: <span class="term-purple">Optimal</span></p>
-                  <p><span class="prompt">PS&gt;</span> Invoke-ProactiveRemediation -Policy "ZeroTrustBaselines"</p>
-                  <p class="term-line"><span class="term-green">✓ Execution completed</span> (0 errors, 42 remediated)<span class="cursor">_</span></p>
-                </div>
-              </div>
-            </section>
-
-            <!-- BLOG / INSIGHTS -->
-            <section id="blog" class="card bento-blog-card">
-              <div class="card-header-flex">
-                <h2 class="section-title small">Technical Insights</h2>
-                <span class="section-badge">Knowledge Base</span>
-              </div>
-              <div class="blog-mini-list">
-                <div class="blog-mini-item">
-                  <span class="tag tag-blue">Intune</span>
-                  <div class="blog-mini-content">
-                    <h4>Modern Endpoint Lifecycle in Practice</h4>
-                    <p>Scalable device onboarding strategies combining Intune, Autopilot, and user persona profiles.</p>
-                  </div>
-                </div>
-                <div class="blog-mini-item">
-                  <span class="tag tag-cyan">PowerShell</span>
-                  <div class="blog-mini-content">
-                    <h4>Automating Recurring Fleet Operations</h4>
-                    <p>API-driven scripts to automate compliance remediation and device health reporting.</p>
-                  </div>
-                </div>
-                <div class="blog-mini-item">
-                  <span class="tag tag-purple">Win32</span>
-                  <div class="blog-mini-content">
-                    <h4>Enterprise App Packaging Patterns</h4>
-                    <p>Building reusable Win32 detection scripts and automated patch deployment rings.</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <!-- QUICK CONTACT BAR -->
-          <section id="contact" class="card contact-compact-card">
+          <!-- ABOUT / STRENGTHS & TOOLSTACK -->
+          <section id="about" class="card">
             <div class="card-header-flex">
               <div>
-                <h2 class="section-title small">Let's Connect &amp; Collaborate</h2>
-                <p class="section-subtitle">Open for discussions on enterprise EUC, modern endpoint management, and infrastructure automation.</p>
+                <h2 class="section-title small">Core Strengths &amp; Toolstack</h2>
+                <p class="section-subtitle">Engineering toolkit &amp; professional background</p>
               </div>
             </div>
-            <div class="contact-grid">
-              <a href="mailto:Abhijith.mohanan@hotmail.com" class="contact-item">
-                <div class="contact-icon icon-blue">
-                  <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            
+            <p class="about-text-compact">8+ years spanning enterprise hardware, EUC infrastructure, and modern endpoint management with deep specialization in Intune, PowerShell, Windows Autopilot, and Graph API.</p>
+
+            <div id="achievements" class="strengths-chips-compact">
+              <span class="strength-chip">✓ Enterprise Hardware &amp; OS Foundation</span>
+              <span class="strength-chip">✓ Zero-Touch Autopilot &amp; Lifecycle</span>
+              <span class="strength-chip">✓ Automated Win32 Packaging Pipelines</span>
+              <span class="strength-chip">✓ Multi-OS: Windows, macOS, iOS, Android</span>
+            </div>
+
+            <div id="tools" class="tools-compact-wrap">
+              <span class="tools-heading-mini">Toolstack:</span>
+              <div class="tools-cloud-compact">
+                <span class="tool-chip highlight">Microsoft Intune</span>
+                <span class="tool-chip highlight">PowerShell</span>
+                <span class="tool-chip highlight">Graph API</span>
+                <span class="tool-chip highlight">Autopilot</span>
+                <span class="tool-chip">Nexthink</span>
+                <span class="tool-chip">Entra ID</span>
+                <span class="tool-chip">Win32 Apps</span>
+                <span class="tool-chip">Defender</span>
+                <span class="tool-chip">macOS MDM</span>
+                <span class="tool-chip">ServiceNow</span>
+                <span class="tool-chip">GitHub</span>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ================= TWO-COLUMN ROW 3: PROJECTS & EXPERIENCE ================= -->
+        <div class="two-col-grid">
+          <!-- PROJECTS -->
+          <section id="projects" class="card">
+            <div class="card-header-flex">
+              <div>
+                <h2 class="section-title small">Featured Projects</h2>
+                <p class="section-subtitle">Key engineering initiatives &amp; solutions</p>
+              </div>
+              <span class="section-badge">4 Delivered</span>
+            </div>
+            <div class="project-list">
+              <div class="project-item">
+                <div class="project-icon">🖼️</div>
+                <div class="project-body">
+                  <h4>Dynamic Corporate Wallpaper Solution</h4>
+                  <p>PowerShell automation &amp; Win32 deployment for dynamic user/department branding across hybrid endpoints.</p>
+                  <div class="tag-row"><span class="tag tag-blue">Intune</span><span class="tag tag-cyan">PowerShell</span><span class="tag tag-green">Win32</span></div>
                 </div>
-                <div class="contact-info">
-                  <span>Email</span>
-                  <p id="contactEmail">Abhijith.mohanan@hotmail.com</p>
+              </div>
+              <div class="project-item">
+                <div class="project-icon">🧩</div>
+                <div class="project-body">
+                  <h4>Intune Win32 App Automation Framework</h4>
+                  <p>Standardized packaging framework with automated detection rules, install verification, and remediation.</p>
+                  <div class="tag-row"><span class="tag tag-blue">Intune</span><span class="tag tag-cyan">PowerShell</span><span class="tag tag-purple">Packaging</span></div>
                 </div>
-              </a>
-              <a href="https://www.linkedin.com/in/abhijithmohanan/" target="_blank" rel="noopener" class="contact-item">
-                <div class="contact-icon icon-purple">
-                  <svg viewBox="0 0 24 24" class="icon"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M7 10v7M7 7v.01M12 17v-4.5a2 2 0 1 1 4 0V17M12 12.5V17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+              </div>
+              <div class="project-item">
+                <div class="project-icon">🚀</div>
+                <div class="project-body">
+                  <h4>Autopilot &amp; Modern Endpoint Engineering</h4>
+                  <p>Zero-touch provisioning, hardware persona mapping, and full device lifecycle onboarding strategy.</p>
+                  <div class="tag-row"><span class="tag tag-purple">Autopilot</span><span class="tag tag-green">EUC</span><span class="tag tag-blue">Azure AD</span></div>
                 </div>
-                <div class="contact-info">
-                  <span>LinkedIn</span>
-                  <p>linkedin.com/in/abhijithmohanan</p>
+              </div>
+              <div class="project-item">
+                <div class="project-icon">🤖</div>
+                <div class="project-body">
+                  <h4>Graph API &amp; Endpoint Automation</h4>
+                  <p>Automated recurring audit, device hygiene routines, and telemetry collection via Graph API integration.</p>
+                  <div class="tag-row"><span class="tag tag-cyan">PowerShell</span><span class="tag tag-purple">Graph API</span></div>
                 </div>
-              </a>
-              <a href="https://github.com/Abhijithmohana" target="_blank" rel="noopener" class="contact-item" id="githubContactLink">
-                <div class="contact-icon icon-cyan">
-                  <svg viewBox="0 0 24 24" class="icon"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2z" fill="currentColor"/></svg>
-                </div>
-                <div class="contact-info">
-                  <span>GitHub</span>
-                  <p id="githubHandle">github.com/Abhijithmohana</p>
-                </div>
-              </a>
+              </div>
             </div>
           </section>
 
-          <!-- FOOTER -->
-          <footer class="page-footer">
-            <div class="footer-bottom">
-              <span class="footer-copy">© 2026 Abhijith M. · Principal Infrastructure Engineer</span>
-              <p class="footer-quote">"Automate today. Secure tomorrow. Empower every endpoint." 🛡️</p>
-              <div class="footer-social">
-                <a href="https://www.linkedin.com/in/abhijithmohanan/" target="_blank" rel="noopener" aria-label="LinkedIn">
-                  <svg viewBox="0 0 24 24" class="icon"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M7 10v7M7 7v.01M12 17v-4.5a2 2 0 1 1 4 0V17M12 12.5V17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
-                </a>
-                <a href="https://github.com/Abhijithmohana" target="_blank" rel="noopener" aria-label="GitHub">
-                  <svg viewBox="0 0 24 24" class="icon"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2z" fill="currentColor"/></svg>
-                </a>
-                <a href="mailto:Abhijith.mohanan@hotmail.com" aria-label="Email">
-                  <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </a>
+          <!-- EXPERIENCE -->
+          <section id="experience" class="card">
+            <div class="card-header-flex">
+              <div>
+                <h2 class="section-title small">Experience Timeline</h2>
+                <p class="section-subtitle">Progressive career trajectory</p>
               </div>
+              <span class="section-badge">8+ Years</span>
             </div>
-          </footer>
+            <ul class="timeline">
+              <li class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-header">
+                  <h4>Principal Infrastructure Engineer</h4>
+                  <span class="timeline-date">Aug 2026 – Present</span>
+                </div>
+                <span class="timeline-sub">Endpoint &amp; EUC Engineering</span>
+                <p>Leading enterprise endpoint engineering across Windows, macOS, iOS, and Android. Driving device lifecycle, hardware evaluation, persona-based provisioning, application deployment pipelines, and PowerShell automation.</p>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-header">
+                  <h4>IT Analyst – Endpoint &amp; EUC</h4>
+                  <span class="timeline-date">Mar 2024 – Aug 2026</span>
+                </div>
+                <p>Handled L2/L3 endpoint incidents, configuration troubleshooting, packaging deployment, and operational automation across cross-platform fleets.</p>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-header">
+                  <h4>IT Support Engineer II – Endpoint &amp; Hardware</h4>
+                  <span class="timeline-date">Dec 2019 – Mar 2024</span>
+                </div>
+                <p>Acted as SPOC for enterprise hardware, peripherals, operating systems, and connectivity troubleshooting across enterprise environments.</p>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-header">
+                  <h4>Hardware &amp; Infrastructure Support</h4>
+                  <span class="timeline-date">Earlier Career</span>
+                </div>
+                <p>Foundational technical support across desktop hardware, Windows, macOS, networking, and user endpoint onboarding.</p>
+              </li>
+            </ul>
+          </section>
         </div>
 
-        <!-- ================= RIGHT COLUMN (SIDE PANEL) ================= -->
-        <aside class="right-column">
-          <!-- PROFILE CARD -->
-          <div class="card profile-card">
-            <div class="profile-card-header">
-              <span class="section-title small">Profile Overview</span>
-              <span class="status-pill mini">
-                <span class="status-dot"></span>
-                <span>Active</span>
-              </span>
-            </div>
-            <div class="profile-top-wrap">
-              <div class="profile-avatar-wrap">
-                <img src="profile.jpg" alt="Abhijith M" class="profile-avatar" />
+        <!-- ================= TWO-COLUMN ROW 4: AUTOMATION & INSIGHTS ================= -->
+        <div class="two-col-grid">
+          <!-- AUTOMATION SCRIPT TERMINAL -->
+          <section id="automation" class="card">
+            <div class="card-header-flex">
+              <div>
+                <h2 class="section-title small">Automation Console</h2>
+                <p class="section-subtitle">Live interactive PowerShell routines</p>
               </div>
-              <div class="profile-top-info">
-                <h3 class="profile-name">Abhijith M</h3>
-                <p class="profile-role">Principal Infrastructure Engineer</p>
-                <p class="profile-role-sub">Endpoint &amp; EUC Engineering</p>
+              <div class="terminal-quick-actions">
+                <button class="term-btn active" data-cmd="health">Fleet Health</button>
+                <button class="term-btn" data-cmd="graph">Graph API</button>
+                <button class="term-btn" data-cmd="autopilot">Autopilot</button>
               </div>
             </div>
+            <div class="terminal">
+              <div class="terminal-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="terminal-title" id="terminalTitle">pwsh — endpoint-automation.ps1</span>
+              </div>
+              <div class="terminal-body" id="terminalOutput">
+                <p><span class="prompt">PS&gt;</span> Connect-MgGraph -Scopes "DeviceManagementManagedDevices.ReadWrite.All"</p>
+                <p class="term-line"><span class="term-green">✓</span> Connected to Microsoft Graph (Tenant: Enterprise Managed)</p>
+                <p><span class="prompt">PS&gt;</span> Get-EndpointCompliance -Status "All"</p>
+                <p class="term-line">Target: <span class="term-blue">Windows 11 / macOS</span> | Compliance: <span class="term-green">99.4%</span> | State: <span class="term-purple">Optimal</span></p>
+                <p><span class="prompt">PS&gt;</span> Invoke-ProactiveRemediation -Policy "ZeroTrustBaselines"</p>
+                <p class="term-line"><span class="term-green">✓ Execution completed</span> (0 errors, 42 remediated)<span class="cursor">_</span></p>
+              </div>
+            </div>
+          </section>
 
-            <div class="profile-meta">
-              <div class="profile-meta-item">
-                <svg viewBox="0 0 24 24" class="icon"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" fill="none"/></svg>
-                <span>India · Remote / Hybrid</span>
+          <!-- BLOG / INSIGHTS -->
+          <section id="blog" class="card">
+            <div class="card-header-flex">
+              <div>
+                <h2 class="section-title small">Technical Insights</h2>
+                <p class="section-subtitle">Knowledge base &amp; best practices</p>
               </div>
-              <div class="profile-meta-item">
+              <span class="section-badge">Knowledge Base</span>
+            </div>
+            <div class="blog-mini-list">
+              <div class="blog-mini-item">
+                <span class="tag tag-blue">Intune</span>
+                <div class="blog-mini-content">
+                  <h4>Modern Endpoint Lifecycle in Practice</h4>
+                  <p>Scalable device onboarding strategies combining Intune, Autopilot, and user persona profiles.</p>
+                </div>
+              </div>
+              <div class="blog-mini-item">
+                <span class="tag tag-cyan">PowerShell</span>
+                <div class="blog-mini-content">
+                  <h4>Automating Recurring Fleet Operations</h4>
+                  <p>API-driven scripts to automate compliance remediation and device health reporting.</p>
+                </div>
+              </div>
+              <div class="blog-mini-item">
+                <span class="tag tag-purple">Win32</span>
+                <div class="blog-mini-content">
+                  <h4>Enterprise App Packaging Patterns</h4>
+                  <p>Building reusable Win32 detection scripts and automated patch deployment rings.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ================= CONTACT ROW ================= -->
+        <section id="contact" class="card contact-compact-card">
+          <div class="card-header-flex">
+            <div>
+              <h2 class="section-title small">Let's Connect &amp; Collaborate</h2>
+              <p class="section-subtitle">Open for discussions on enterprise EUC, modern endpoint management, and infrastructure automation.</p>
+            </div>
+          </div>
+          <div class="contact-grid">
+            <a href="mailto:Abhijith.mohanan@hotmail.com" class="contact-item" id="emailContactCard">
+              <div class="contact-icon icon-blue">
                 <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <a href="mailto:Abhijith.mohanan@hotmail.com">Abhijith.mohanan@hotmail.com</a>
               </div>
-              <div class="profile-meta-item">
+              <div class="contact-info">
+                <span>Email (Click to copy)</span>
+                <p id="contactEmail">Abhijith.mohanan@hotmail.com</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/abhijithmohanan/" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-icon icon-purple">
                 <svg viewBox="0 0 24 24" class="icon"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M7 10v7M7 7v.01M12 17v-4.5a2 2 0 1 1 4 0V17M12 12.5V17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
-                <a href="https://www.linkedin.com/in/abhijithmohanan/" target="_blank" rel="noopener">linkedin.com/in/abhijithmohanan</a>
               </div>
-              <div class="profile-meta-item">
+              <div class="contact-info">
+                <span>LinkedIn</span>
+                <p>linkedin.com/in/abhijithmohanan</p>
+              </div>
+            </a>
+            <a href="https://github.com/Abhijithmohana" target="_blank" rel="noopener" class="contact-item" id="githubContactLink">
+              <div class="contact-icon icon-cyan">
                 <svg viewBox="0 0 24 24" class="icon"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2z" fill="currentColor"/></svg>
-                <a href="https://github.com/Abhijithmohana" target="_blank" rel="noopener" id="githubProfileLink">github.com/Abhijithmohana</a>
               </div>
+              <div class="contact-info">
+                <span>GitHub</span>
+                <p id="githubHandle">github.com/Abhijithmohana</p>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="page-footer">
+          <div class="footer-bottom">
+            <span class="footer-copy">© 2026 Abhijith Mohanan · Principal Infrastructure Engineer</span>
+            <p class="footer-quote">"Automate today. Secure tomorrow. Empower every endpoint." 🛡️</p>
+            <div class="footer-social">
+              <a href="https://www.linkedin.com/in/abhijithmohanan/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" class="icon"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="2" fill="none"/><path d="M7 10v7M7 7v.01M12 17v-4.5a2 2 0 1 1 4 0V17M12 12.5V17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+              </a>
+              <a href="https://github.com/Abhijithmohana" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" class="icon"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2z" fill="currentColor"/></svg>
+              </a>
+              <a href="mailto:Abhijith.mohanan@hotmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
             </div>
           </div>
-
-          <!-- TECHNICAL SKILLS -->
-          <div class="card skills-card" id="skills">
-            <div class="card-header-flex">
-              <span class="section-title small">Technical Proficiency</span>
-              <span class="section-badge">10 Domains</span>
-            </div>
-            
-            <div class="skills-dense-list">
-              <div class="skill-row" data-level="90"><div class="skill-top"><span>Microsoft Intune</span><span class="skill-label">90%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-              <div class="skill-row" data-level="90"><div class="skill-top"><span>PowerShell Automation</span><span class="skill-label">90%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-              <div class="skill-row" data-level="90"><div class="skill-top"><span>Windows 10/11 OS</span><span class="skill-label">90%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-              <div class="skill-row" data-level="85"><div class="skill-top"><span>App Packaging &amp; Win32</span><span class="skill-label">85%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-              <div class="skill-row" data-level="75"><div class="skill-top"><span>Windows Autopilot</span><span class="skill-label">75%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-              <div class="skill-row" data-level="70"><div class="skill-top"><span>macOS Management</span><span class="skill-label">70%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-              <div class="skill-row" data-level="70"><div class="skill-top"><span>iOS &amp; Android MDM</span><span class="skill-label">70%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-              <div class="skill-row" data-level="70"><div class="skill-top"><span>Endpoint Security &amp; Baselines</span><span class="skill-label">70%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-              <div class="skill-row" data-level="70"><div class="skill-top"><span>Entra ID / Azure AD</span><span class="skill-label">70%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-              <div class="skill-row" data-level="65"><div class="skill-top"><span>Microsoft Graph API</span><span class="skill-label">65%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
-            </div>
-          </div>
-
-          <!-- CERTIFICATIONS -->
-          <div class="card cert-card" id="certifications">
-            <div class="card-header-flex">
-              <span class="section-title small">Verified Certifications</span>
-              <span class="section-badge">5 Badges</span>
-            </div>
-            <div class="cert-list">
-              <div class="cert-item">
-                <div class="cert-logo brand-nexthink" aria-label="Nexthink Expert Certification Badge">
-                  <svg viewBox="0 0 64 74" class="cert-svg" aria-hidden="true">
-                    <defs>
-                      <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#EAA315"/>
-                        <stop offset="100%" stop-color="#D48A08"/>
-                      </linearGradient>
-                    </defs>
-                    <path d="M8 8 C8 3, 13 0, 18 0 L46 0 C51 0, 56 3, 56 8 L56 46 C56 60, 32 72, 32 72 C32 72, 8 60, 8 46 Z" fill="#ffffff"/>
-                    <path d="M8 8 C8 3, 13 0, 18 0 L46 0 C51 0, 56 3, 56 8 L56 16 L8 16 Z" fill="#0C1535"/>
-                    <text x="32" y="7" fill="#ffffff" font-size="4.2" font-weight="800" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle" letter-spacing="0.5">NEXTHINK</text>
-                    <text x="32" y="13" fill="#ffffff" font-size="3.8" font-weight="700" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle" letter-spacing="0.8">CERTIFIED</text>
-                    <text x="32" y="27" fill="#1e293b" font-size="6.5" font-weight="700" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Nexthink</text>
-                    <rect x="23" y="30" width="18" height="18" rx="4" fill="#0C1535"/>
-                    <path d="M28 43 L28 36 C28 34, 30 34, 32 34 C34 34, 36 35, 36 37 L36 43" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round"/>
-                    <path d="M8 45 C16 43, 48 43, 56 45 L56 46 C56 60, 32 72, 32 72 C32 72, 8 60, 8 46 Z" fill="url(#goldGrad)"/>
-                    <text x="32" y="58" fill="#ffffff" font-size="7" font-weight="800" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Expert</text>
-                  </svg>
-                </div>
-                <div class="cert-body">
-                  <h4>Certified Nexthink Expert</h4>
-                  <p>Nexthink</p>
-                  <a class="cert-link" href="https://learn.nexthink.com/c/s/WDCkpR0wbT8Rft_JixPjIZboR6eOunNudNF0RQa3RBjQQ6MG_xG5dbdMgNzUZXjP" target="_blank" rel="noopener">View credential ↗</a>
-                </div>
-                <div class="cert-meta">
-                  <span class="cert-status">Valid</span>
-                  <span class="cert-validity">Jul '26 - '28</span>
-                </div>
-              </div>
-
-              <div class="cert-item">
-                <div class="cert-logo brand-microsoft" aria-label="Microsoft Certified Expert Badge">
-                  <svg viewBox="0 0 64 74" class="cert-svg" aria-hidden="true">
-                    <defs>
-                      <linearGradient id="msExpertGrad" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#0078D4"/>
-                        <stop offset="100%" stop-color="#005A9E"/>
-                      </linearGradient>
-                    </defs>
-                    <path d="M10 10 C10 4, 14 0, 20 0 L44 0 C50 0, 54 4, 54 10 L54 36 L10 36 Z" fill="#242930"/>
-                    <text x="32" y="14" fill="#ffffff" font-size="6" font-weight="700" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Microsoft</text>
-                    <text x="32" y="22" fill="#d1d5db" font-size="4.5" font-weight="600" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle" letter-spacing="1">CERTIFIED</text>
-                    <path d="M10 36 L54 36 L54 44 C54 58, 32 72, 32 72 C32 72, 10 58, 10 44 Z" fill="url(#msExpertGrad)"/>
-                    <path d="M6 31 C6 28, 58 28, 58 31 L58 45 C58 48, 6 48, 6 45 Z" fill="#ffffff"/>
-                    <text x="32" y="41" fill="#1e293b" font-size="7.5" font-weight="900" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle" letter-spacing="0.8">EXPERT</text>
-                    <polygon points="20,53 21.5,57.5 26,57.5 22.5,60 24,64.5 20,62 16,64.5 17.5,60 14,57.5 18.5,57.5" fill="#ffffff"/>
-                    <polygon points="32,53 33.5,57.5 38,57.5 34.5,60 36,64.5 32,62 28,64.5 29.5,60 26,57.5 30.5,57.5" fill="#ffffff"/>
-                    <polygon points="44,53 45.5,57.5 50,57.5 46.5,60 48,64.5 44,62 40,64.5 41.5,60 38,57.5 42.5,57.5" fill="#ffffff"/>
-                  </svg>
-                </div>
-                <div class="cert-body">
-                  <h4>M365: Administrator Expert</h4>
-                  <p>Microsoft</p>
-                  <a class="cert-link" href="https://learn.microsoft.com/en-us/users/abhijithm-9071/credentials/bf19ce877519aa37?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener">View credential ↗</a>
-                </div>
-                <div class="cert-meta">
-                  <span class="cert-status">Valid</span>
-                  <span class="cert-validity">Jun '23 - '27</span>
-                </div>
-              </div>
-
-              <div class="cert-item">
-                <div class="cert-logo brand-microsoft" aria-label="Microsoft Certified Associate Badge">
-                  <svg viewBox="0 0 64 74" class="cert-svg" aria-hidden="true">
-                    <defs>
-                      <linearGradient id="msAssocGradSec" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#0078D4"/>
-                        <stop offset="100%" stop-color="#005A9E"/>
-                      </linearGradient>
-                    </defs>
-                    <path d="M10 10 C10 4, 14 0, 20 0 L44 0 C50 0, 54 4, 54 10 L54 36 L10 36 Z" fill="#242930"/>
-                    <text x="32" y="14" fill="#ffffff" font-size="6" font-weight="700" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Microsoft</text>
-                    <text x="32" y="22" fill="#d1d5db" font-size="4.5" font-weight="600" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle" letter-spacing="1">CERTIFIED</text>
-                    <path d="M10 36 L54 36 L54 44 C54 58, 32 72, 32 72 C32 72, 10 58, 10 44 Z" fill="url(#msAssocGradSec)"/>
-                    <path d="M5 31 C5 28, 59 28, 59 31 L59 45 C59 48, 5 48, 5 45 Z" fill="#ffffff"/>
-                    <text x="32" y="40.5" fill="#1e293b" font-size="6.2" font-weight="900" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle" letter-spacing="0.5">ASSOCIATE</text>
-                    <polygon points="25,53 26.5,57.5 31,57.5 27.5,60 29,64.5 25,62 21,64.5 22.5,60 19,57.5 23.5,57.5" fill="#ffffff"/>
-                    <polygon points="39,53 40.5,57.5 45,57.5 41.5,60 43,64.5 39,62 35,64.5 36.5,60 33,57.5 37.5,57.5" fill="#ffffff"/>
-                  </svg>
-                </div>
-                <div class="cert-body">
-                  <h4>Security Operations Analyst</h4>
-                  <p>Microsoft Associate</p>
-                  <a class="cert-link" href="https://learn.microsoft.com/en-us/users/abhijithm-9071/credentials/7dd02a3677ef0311?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener">View credential ↗</a>
-                </div>
-                <div class="cert-meta">
-                  <span class="cert-status">Valid</span>
-                  <span class="cert-validity">Jun '26 - '27</span>
-                </div>
-              </div>
-
-              <div class="cert-item">
-                <div class="cert-logo brand-microsoft" aria-label="Microsoft Certified Endpoint Administrator Associate Badge">
-                  <svg viewBox="0 0 64 74" class="cert-svg" aria-hidden="true">
-                    <defs>
-                      <linearGradient id="msAssocGradEnd" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#0078D4"/>
-                        <stop offset="100%" stop-color="#005A9E"/>
-                      </linearGradient>
-                    </defs>
-                    <path d="M10 10 C10 4, 14 0, 20 0 L44 0 C50 0, 54 4, 54 10 L54 36 L10 36 Z" fill="#242930"/>
-                    <text x="32" y="14" fill="#ffffff" font-size="6" font-weight="700" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Microsoft</text>
-                    <text x="32" y="22" fill="#d1d5db" font-size="4.5" font-weight="600" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle" letter-spacing="1">CERTIFIED</text>
-                    <path d="M10 36 L54 36 L54 44 C54 58, 32 72, 32 72 C32 72, 10 58, 10 44 Z" fill="url(#msAssocGradEnd)"/>
-                    <path d="M5 31 C5 28, 59 28, 59 31 L59 45 C59 48, 5 48, 5 45 Z" fill="#ffffff"/>
-                    <text x="32" y="40.5" fill="#1e293b" font-size="6.2" font-weight="900" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle" letter-spacing="0.5">ASSOCIATE</text>
-                    <polygon points="25,53 26.5,57.5 31,57.5 27.5,60 29,64.5 25,62 21,64.5 22.5,60 19,57.5 23.5,57.5" fill="#ffffff"/>
-                    <polygon points="39,53 40.5,57.5 45,57.5 41.5,60 43,64.5 39,62 35,64.5 36.5,60 33,57.5 37.5,57.5" fill="#ffffff"/>
-                  </svg>
-                </div>
-                <div class="cert-body">
-                  <h4>Endpoint Administrator</h4>
-                  <p>Microsoft Associate</p>
-                  <a class="cert-link" href="https://learn.microsoft.com/en-us/users/abhijithm-9071/credentials/eeadf478c2d77955?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener">View credential ↗</a>
-                </div>
-                <div class="cert-meta">
-                  <span class="cert-status">Valid</span>
-                  <span class="cert-validity">Jun '25 - '27</span>
-                </div>
-              </div>
-
-              <div class="cert-item">
-                <div class="cert-logo brand-nexthink" aria-label="Nexthink Certification Badge">
-                  <svg viewBox="0 0 64 74" class="cert-svg" aria-hidden="true">
-                    <defs>
-                      <linearGradient id="purpleGrad" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#7C3AED"/>
-                        <stop offset="100%" stop-color="#5B21B6"/>
-                      </linearGradient>
-                    </defs>
-                    <path d="M8 8 C8 3, 13 0, 18 0 L46 0 C51 0, 56 3, 56 8 L56 46 C56 60, 32 72, 32 72 C32 72, 8 60, 8 46 Z" fill="#ffffff"/>
-                    <path d="M8 8 C8 3, 13 0, 18 0 L46 0 C51 0, 56 3, 56 8 L56 16 L8 16 Z" fill="#0C1535"/>
-                    <text x="32" y="7" fill="#ffffff" font-size="4.2" font-weight="800" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle" letter-spacing="0.5">NEXTHINK</text>
-                    <text x="32" y="13" fill="#ffffff" font-size="3.8" font-weight="700" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle" letter-spacing="0.8">CERTIFIED</text>
-                    <text x="32" y="27" fill="#1e293b" font-size="6.5" font-weight="700" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Nexthink</text>
-                    <rect x="23" y="30" width="18" height="18" rx="4" fill="#0C1535"/>
-                    <path d="M28 43 L28 36 C28 34, 30 34, 32 34 C34 34, 36 35, 36 37 L36 43" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round"/>
-                    <path d="M8 45 C16 43, 48 43, 56 45 L56 46 C56 60, 32 72, 32 72 C32 72, 8 60, 8 46 Z" fill="url(#purpleGrad)"/>
-                    <text x="32" y="58" fill="#ffffff" font-size="5" font-weight="800" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Professional</text>
-                  </svg>
-                </div>
-                <div class="cert-body">
-                  <h4>Nexthink Professional</h4>
-                  <p>IT Support</p>
-                  <a class="cert-link" href="https://learn.nexthink.com/c/O2NqX2reT2SzPbmuffn8ZA" target="_blank" rel="noopener">View credential ↗</a>
-                </div>
-                <div class="cert-meta">
-                  <span class="cert-status">Valid</span>
-                  <span class="cert-validity">Apr '25 - '27</span>
-                </div>
-              </div>
-
-              <div class="cert-item">
-                <div class="cert-logo brand-secops" aria-label="The SecOps Group logo">
-                  <svg viewBox="0 0 64 64" class="cert-svg" aria-hidden="true">
-                    <path d="M32 6 C44 6, 54 13, 54 26 C54 44, 32 56, 32 56 C32 56, 10 44, 10 26 C10 13, 20 6, 32 6 Z" fill="none" stroke="#F95721" stroke-width="4.5" stroke-linejoin="round"/>
-                    <path d="M42 19 C35 15, 23 16, 21 23 C19 30, 44 28, 43 38 C42 46, 28 47, 21 43" fill="none" stroke="#F95721" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-                <div class="cert-body">
-                  <h4>CNSP - Network Security</h4>
-                  <p>The SecOps Group</p>
-                  <span class="cert-link muted-link">Accredited Practitioner</span>
-                </div>
-                <div class="cert-meta">
-                  <span class="cert-status success">Lifetime</span>
-                  <span class="cert-validity">No expiry</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </aside>
+        </footer>
 
       </div>
     </div>
   </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toastNotification" class="toast-notification"></div>
 
 <script src="script.js"></script>
 </body>
